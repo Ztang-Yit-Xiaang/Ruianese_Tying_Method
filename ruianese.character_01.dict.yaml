@@ -1,0 +1,390 @@
+# 文件名：ruianese.character_01.dict.yaml
+# Date: 2024-12
+# Rime dictionary
+# Ruianese - 瑞安話
+# 瑞安話同音字匯
+# 字典來源：溫州話/沈克成,沈迦著.—寧波:寧波出版社,2004.11 (ISBN 7-80602-811-0)
+# 瑞安方言讀音字典/張永愷.—上海:上海社會科學院出版社,2003.7 (ISBN 7-80681-312-8/H)
+# 有少量修改
+# encoding: utf-8
+# 本作品採用許可證[AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html)進行許可。
+# 版權所有 © 2024
+
+---
+max_phrase_length: 7  
+min_phrase_weight: 100  
+name: ruianese_character_01 
+sort: by_simp_stroke
+use_preset_vocabulary: true
+version: "1.0.0"  
+...
+
+#方言讀音P1
+#一部
+一	ia3
+##一畫
+丁  deng1
+丁  zang1
+七  ca3
+##二畫
+三  so1
+#干 諸類正體字
+乾  geu1  #乾燥
+幹  geu4  #軀幹，幹嘛
+榦  geu4  #幹之異體字
+于  ju1
+上  xyiae6
+上  xyiae8
+才  zei5
+纔  dzei6 #副詞才的正字
+下  hhoo6
+下  hhoo8
+丈  jjia6
+丈  dzia6
+兀  ngeu7
+與  vju6  #与的正字
+與  vju8
+與  vju5
+万  vo4
+萬  mo5
+##三畫
+丰  fong1
+豐  fong1
+井  zeng2
+開  ki1  #开的正字
+開  ke1
+夫  fvu1
+夫  vu5
+天  tie1
+元  nyju4
+元  nyjue4
+無  vu5
+無  moo5
+韋  vju5 #韦的正字
+專  zjue1 #专的正字
+專  jyue1
+專  jyu1
+丐  keu3
+丐  geu3
+廿  nie8
+廿  zza7
+五  ngu6
+匝  ze3
+帀  ze3
+匝  zo3
+帀  zo3
+丏  mi6
+丏  mie6
+卅  so3
+卅  lo7
+不  ba3
+不  deu2
+冇  nao6
+友  xyao6
+友  iao6
+丑  cou2
+醜  cou2  #醜陋
+牙  ngoo5
+屯  dju5
+屯  zong1
+互  vu8
+# 四畫
+末  meu7
+未  vei8
+擊  jie3 #击的正字
+正  zeng4
+正  zeng1
+甘  geu1
+且  cei2
+且  zou1
+可  koo2
+可  koo4
+冊  ca3 #册的正字
+丙  beng2
+平  beng5
+東  dong1 #东的正字
+絲  si1 #丝的正字
+# 五畫
+攷  kae2
+考  kae2
+老  lae6
+共  jjyo8
+共  jyo1 #共工
+亞  oo4
+亙  gang4 #亘的正字
+吏  lei8
+再  zei4 ##
+在  zzei6 ##
+百  ba3
+有  iao6
+有  iao8  #吾十有五
+而  zzi5
+死  si2
+夷  xyii2
+夷  ii2
+丞  zeng5
+堯  nyo5
+至  zi4
+# 六畫
+嚴  nyi5 #严的正字
+巫  vju5
+求  jjiao5
+甫  fvu2
+更  ga1
+更  ga4
+束  xjuo3 
+兩  la6
+兩  liae6
+麗  lei8
+麗  lei5
+來  lei5 ##
+#七畫
+奉  vong6
+武  vu6
+錶  bi2 ##
+表  bi2
+忝  tiae1
+長  jiae2
+長  jjiae5
+其  jji5
+畫  va7
+畫  vuo8
+事  zzi8
+棗  zae
+並  beng6
+亟  jii3 ##
+亟  qii4
+#八畫
+奏  zao4
+毒  dou7
+韭  jiao2
+甚  zzang8
+甚  zzang
+巷  hho8
+柬  go2
+歪  wa1
+甭  bong2
+晝  zao4
+#九畫
+艷  xyie8 #艳的正字
+泰  ta4
+秦  zzang5
+恭  gong4 ##
+彧  veu3 ##
+哥  gvu1
+鬲  ga3
+鬲  lei7
+孬  nae6
+夏  hho8
+#十畫以上
+焉  ie1  
+堇  jiang2 
+爽  sjuo
+甦  seju1
+棘  jie7
+奡  ngae8
+皕  bei4
+尠  sie2
+尠  xie2
+尟  sie2
+尟  xie2
+賴  la8
+壽  zzou8
+爾  zzi6
+暨  jjii8
+奭  seo3
+賾  zza7
+鼒  zi1
+鼒  zze5
+憂  iao1
+黇  tiae1
+黇  zie1
+黇  jie1
+整  zeng2
+噩  ngoo7
+臻  zang1
+鬴  fvu2
+釜  fvu2
+釐  lei5
+醫  ii1
+囊  noo5
+#丨部
+#二畫
+也  ia2
+#三畫
+中  zong1
+中  zong4
+中  jiong1
+中  jiong4
+内  nai8
+吊  duoo4
+弔  duoo4
+書  seju1
+卡  ka2
+卡  ko2
+北  bei3
+凸  ddeu7
+舊  jjiao8
+舊  jjiao5
+歸  jyu1
+歸  gai1
+甲  go3
+申  sang1
+電  ddie8
+由  xyiao5
+冉  xyie6
+冉  zzie6
+央  iae1
+史  si2
+半  beu4
+凹  o1
+出  cjueu3
+出  qjueu3
+齣  cjueu3
+齣  qjueu3
+#五至七畫
+師  si1
+抴  xyii7
+曳  xyii8
+曲  qiou8
+曲  qjuo8
+麯  qiou8
+麴  qiou8
+肉  nyou7
+羋  mei6
+縣  xyie7
+縣  xyjue7
+串  qjue4
+串  cong4
+非  fei1
+果  gvu2
+菓  gvu2
+暢  ciae4
+暢  qiae4
+肅  sou3
+#八畫以上
+臨  leng5
+將  ziae1
+將  jiae1
+將  ziae4
+將  jiae4
+禺  nyju5
+幽  iao1
+畢  bei3
+鼎  deng2
+嘦  jyue4
+冀  jii4
+豳  beng1
+#丿部
+#一至兩畫
+入  zza7
+乂  nyii8
+九  jiao2
+匕  bei2
+乃  na6
+迺  na6
+廼  na6
+千  qie1
+韆  qie1
+乞  qii3
+川  qju1
+凡  vo5
+凢  vo5
+凣  vo5
+義  nyii8
+麽  mo5
+麼  mo5
+庅  mo5
+久  jiao2
+丸  xyju5
+及  jjia7
+#三畫
+午  ngvu6
+壬  nyang5
+升  seng1
+昇  seng1
+陞  seng1
+夭  yeu1 #夭夭
+夭  yeu2
+殀  yeu2 #殀折
+幣  bbei8
+反  fo2
+爻  hho5
+乏  vo7
+氏  zzi5 #氏族
+氏  zei1 #月氏
+丹  do1
+烏  vu1
+#四畫
+生  sa3
+玍  ga2
+失  sa3
+乍  zzo8
+丘  qiao1
+坵  qiao1
+卮  zei1
+巵  zei1
+乎  vvu5
+用  xyjuo8
+甩  xia3
+氐  dei2
+氐  dei1
+樂  loo7  #與普通話不同，音樂的樂也是loo7
+樂  ngoo7 #樂清
+処  ceju2
+處  ceju2
+䖏  ceju2
+処  ceju4
+處  ceju4
+䖏  ceju4
+冬  ddong5
+鼕  ddong5
+務  vju8
+#五畫
+年  nyie5
+秊  nyie5
+硃  zeju1
+朱  zeju1
+丟  dou1
+喬  jjyu5
+乒  peng1
+乓  pong1
+甪  lou7
+向  xiae4
+嚮  xiae4
+曏  xiae4
+囟  sang4
+顖  sang4
+後  hhao6
+后  hhao6
+殺  so3
+兆  jyu6
+汆  ceu1
+危  nyju5
+各  goo3 #各種
+各  goo2 #各自
+色  sei3
+#六畫
+我  ngvu5
+每  mei6
+兵  beng1
+兔  teju4
+囱  cong1
+希  xii1
+龜  ju1
+龜  jiang1
+龜  jiao1
+卵  lang6
+係  jii4
+繫  xyii8
+系  xyii8
+#七畫
+垂  zjeu5
+乖  ga1
+秉  bong2
+臾  vju5
+卑  bai1
+阜  vau6
+質  za3
+肴  hho5
+餚  hho5
