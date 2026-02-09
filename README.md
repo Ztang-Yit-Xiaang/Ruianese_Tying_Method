@@ -1,157 +1,144 @@
-# Ruianese_Tying_Method
-Ruianese Typing Method — A Rime-based input method for the Rui’an dialect (Wenzhounese, Southern Wu). Features full phonetic support, standardized Latinization, and rich vocabulary. Join us to preserve and promote Rui’an in the digital age!
-Contact Email: ztangyitxiaang@gmail.com
+# 瑞安話字典轉寫規則（IPA / 文獻 → 拼音 Scheme）
 
-Supports full phonetic system, standardized Latinization, and a growing vocabulary.
+本規則用於將《瑞安方言讀音字典》等文獻中的記音，
+穩定、可逆地轉寫為本方案所定義之瑞安話拉丁拼音，
+並可直接用於 Rime 輸入法與詞典工程。
 
-## Features
-- Accurate phonetic mapping for Rui’an dialect
-- Standardized Latinization based on linguistic research
-- Cross-platform support via [Rime](https://rime.im/)
-- Expandable dictionary with local words and idioms
-# Ruianese Typing Method
+---
 
-A Rime-based input method for the Rui’an dialect (Southern Wu, Wenzhou area).  
-Supports the full phonetic system, standardized Latinization, and a growing vocabulary.
+## 一、轉寫總原則（非常重要）
 
-## Features
-- Accurate mapping of Rui’an initials, finals, and tones
-- Standardized Latinization based on linguistic research
-- Cross-platform via [Rime](https://rime.im/)
-- Expandable dictionary with local words and idioms
+**轉寫順序永遠是：**
 
-## Ruian Pinyin Scheme (Simplified)
+1. **先判聲調（陰 / 陽）**
+2. 再判聲母
+3. 最後判韻母
 
-**Initials (声母)**  
-| IPA   | 字母 | 例字 |  
-|-------|------|------|  
-| p     | b    | 布 |  
-| pʰ    | p    | 怕 |  
-| b     | bb   | 敗 |  
-| m     | m    | 麻 |  
-| f     | f    | 飛 |  
-| v     | v    | 物 |  
-| t     | d    | 多 |  
-| tʰ    | t    | 體 |  
-| d     | dd   | 大 |  
-| n     | n    | 奶 |  
-| l     | l    | 聊 |  
-| k     | g    | 瓜 |  
-| kʰ    | k    | 課 |  
-| g     | gg   | 厚 |  
-| ŋ     | ng   | 兒 |  
-| h     | h    | 鞋 |  
-| ɦ     | hh   | 畫 |  
-| tɕ    | j    | 箭 |  
-| tɕʰ   | q    | 切 |  
-| dʑ    | jj   | 錢 |  
-| ȵ     | nj   | 娘 |  
-| ɕ     | x    | 笑 |  
-| ts    | z    | 租 |  
-| tsʰ   | c    | 擦 |  
-| dz    | zz   | 暫 |  
-| s     | s    | 洗 |  
-| ʑ     | zs   | 爺 |  
+> 在任何情況下，聲調判定的優先級高於拼音與 IPA。
 
-**Finals (韵母)**  
-- Single: `a`, `o`, `oo`, `ae`, `e`, `i`, `u`, `yu`  
-- Compound: `ai`, `ei`, `ao`, `ou`, `iae`, `io`, `ia`, `iao`, `iou`, `ie`, `uai`, `uo`, `uoo`, `yue`, `yo`, `oi`  
-- Nasals: `ang`, `eng`, `ong`, `iang`, `iong`  
-- Special: `ng`, `i` (after z/s/zh/sh)
+---
 
-## Getting Started
-1. Install [Rime](https://rime.im/).
-2. Clone or download this repository.
-3. Copy the schema and dictionary files into your Rime config folder.
-4. Deploy Rime and select the Ruianese Typing Method.
+## 二、聲調判定規則（核心規則）
 
-## Contributing
-We welcome help with:
-- Dictionary compilation and proofreading  
-- Pinyin scheme refinement  
-- Testing and feedback  
+### 1. 陰調 / 陽調的視覺判定
 
-## License
-MIT License — see the [LICENSE](LICENSE) file for details.
+在字典中，聲調標在音節符號四角：
 
-## Getting Started
-This project is in its early stage.  
-To try it:
-1. Install [Rime](https://rime.im/) for your platform.
-2. Clone or download this repository.
-3. Copy the schema and dictionary files into your Rime config folder.
+- **若調號符號下方「沒有橫線」 → 陰調（第 1–4 聲）**
+- **若調號符號下方「有一橫線」 → 陽調（第 5–8 聲）**
 
-## Contributing
-We welcome help with:
-- Dictionary compilation and proofreading  
-- Pinyin scheme refinement  
-- Testing and feedback  
+### 2. 調類與數字對應（Rime 用）
 
-## License
-MIT License — see the [LICENSE](LICENSE) file for details.
+| 調類 | 陰 / 陽 | Rime 調號 |
+|----|----|----|
+| 平 | 陰 | 1 |
+| 上 | 陰 | 2 |
+| 去 | 陰 | 3 |
+| 入 | 陰 | 4 |
+| 平 | 陽 | 5 |
+| 上 | 陽 | 6 |
+| 去 | 陽 | 7 |
+| 入 | 陽 | 8 |
 
-# 瑞安話輸入法
+> 凡調號下方有橫線者，一律判為第 5–8 聲。
 
-基於 Rime 乂瑞安話（浙南吳語溫州片）輸入法方案。  
-支援完整乂聲韻系統、標準化拉丁拼音方案，以及不斷擴充乂詞彙庫。歡迎各位後生兒、媛主兒乂加入！
-聯絡我：[ztangyitxiaang@gmail.com](mailto:ztangyitxiaang@gmail.com)
+---
 
-## 特點
-- 精準對應瑞安話的聲母、韻母與聲調  
-- 基於語言學研究的標準化拼音方案  
-- 跨平台支援（[Rime](https://rime.im/)）  
-- 可擴充的本地詞彙與俗諺資料庫  
+## 三、聲母轉寫規則
 
-## 瑞安話拼音方案（簡化版）
+### 1. 清 / 送氣 / 濁對立（工程拼寫）
 
-**聲母**  
-| IPA   | 字母 | 例字 |  
-|-------|------|------|  
-| p     | b    | 布 |  
-| pʰ    | p    | 怕 |  
-| b     | bb   | 敗 |  
-| m     | m    | 麻 |  
-| f     | f    | 飛 |  
-| v     | v    | 物 |  
-| t     | d    | 多 |  
-| tʰ    | t    | 體 |  
-| d     | dd   | 大 |  
-| n     | n    | 奶 |  
-| l     | l    | 聊 |  
-| k     | g    | 瓜 |  
-| kʰ    | k    | 課 |  
-| g     | gg   | 厚 |  
-| ŋ     | ng   | 兒 |  
-| h     | h    | 鞋 |  
-| ɦ     | hh   | 畫 |  
-| tɕ    | j    | 箭 |  
-| tɕʰ   | q    | 切 |  
-| dʑ    | jj   | 錢 |  
-| ȵ     | nj   | 娘 |  
-| ɕ     | x    | 笑 |  
-| ts    | z    | 租 |  
-| tsʰ   | c    | 擦 |  
-| dz    | zz   | 暫 |  
-| s     | s    | 洗 |  
-| ʑ     | zs   | 爺 |  
+| 文獻 / IPA | Scheme |
+|---|---|
+| p / t / k | b / d / g |
+| pʰ / tʰ / kʰ | p / t / k |
+| b / d / g | bb / dd / gg |
+| ts | z |
+| tsʰ | c |
+| dz | zz |
 
-**韻母**  
-- 單韻母：`a`, `o`, `oo`, `ae`, `e`, `i`, `u`, `yu`  
-- 複韻母：`ai`, `ei`, `ao`, `ou`, `iae`, `io`, `ia`, `iao`, `iou`, `ie`, `uai`, `uo`, `uoo`, `yue`, `yo`, `oi`  
-- 鼻韻母：`ang`, `eng`, `ong`, `iang`, `iong`  
-- 特殊韻母：`ng`, `i`（僅在 z/s/zh/sh 等後出現）  
+> 本方案僅在拉丁拼寫層面合併 ts → z，
+> 不影響音系分析層對 /ts/ 的描述。
 
-## 安裝方法
-1. 安裝 [Rime](https://rime.im/)。  
-2. 複製或下載本專案。  
-3. 將方案與詞典檔案放入 Rime 配置資料夾。  
-4. 部署 Rime，選擇瑞安話輸入法。  
+### 2. 其他聲母
 
-## 參與貢獻
-歡迎協助：  
-- 詞庫整理與校對  
-- 拼音方案優化  
-- 軟體測試與反饋  
+| IPA | Scheme |
+|---|---|
+| tɕ / tɕʰ / dʑ | j / q / jj |
+| ɕ | x |
+| ʑ / z̠ | zs |
+| s | s |
+| ɦ | hh |
+| ŋ | ng |
+| ȵ | nj |
 
-## 授權
-MIT 授權條款 — 詳見 [LICENSE](LICENSE)。
+---
+
+## 四、韻母轉寫規則
+
+### 1. 中央元音 ə（**硬規則**）
+
+> 文獻中記為 **ə** 的元音，在本方案中 **一律轉寫為 e**，
+> 不得寫成 a。
+
+| IPA | Scheme |
+|---|---|
+| ə | e |
+
+**適用例：**
+- kə → ge
+- tsəŋ → zeng
+- dzə → zze
+
+---
+
+### 2. 高前圓元音 y / ʉ
+
+| IPA | Scheme |
+|---|---|
+| y / ʉ | yu |
+
+> 本方案中 /y/ 與 /ʉ/ 合併為 yu，不區分音位。
+
+---
+
+### 3. ɔ / o 的區分
+
+| IPA | Scheme |
+|---|---|
+| ɔ | o |
+| o | oo |
+
+---
+
+### 4. 複韻母（一一對應，無特判）
+
+| IPA | Scheme |
+|---|---|
+| iæ | iae |
+| iɔ | io |
+| əu | eu |
+| uo（閉 o） | uou |
+| yə | yue |
+| yo | yo |
+
+---
+
+## 五、排版防誤讀規則
+
+> 出現在音標左下角、字形較小的符號（如 c），
+> **優先視為聲調標記，不得誤判為聲母。**
+
+---
+
+## 六、示例（自動套用規則）
+
+- 于：ʉ¹ → yu1  
+- 才：zeh¹ / zzeh¹  
+- 上（有橫線，上聲）：zsiae6  
+- 干（乾）：kə → ge1  
+- 干（幹）：kəʔ → ge3  
+
+---
+
+本規則為瑞安話拼音方案的正式轉寫依據。
