@@ -29,22 +29,22 @@ version: "1.0.0"
 ##二畫
 三  so1
 #干 諸類正體字
-乾  geu1  #乾燥
-幹  geu4  #軀幹，幹嘛
-榦  geu4  #幹之異體字
-于  ju1
-上  xyiae6
-上  xyiae8
+乾  ge1  #乾燥
+幹  ge4  #軀幹，幹嘛
+榦  ge4  #幹之異體字
+于  yu1
+上  zsiae6
+上  zsiae8
 才  zei5
-纔  dzei6 #副詞才的正字
+纔  zzei6 #副詞才的正字
 下  hhoo6
 下  hhoo8
 丈  jjia6
-丈  dzia6
-兀  ngeu7
-與  vju6  #与的正字
-與  vju8
-與  vju5
+丈  zzia6
+兀  nge7
+與  vyu6  #与的正字
+與  vyu8
+與  vyu5
 万  vo4
 萬  mo5
 ##三畫
@@ -53,19 +53,19 @@ version: "1.0.0"
 井  zeng2
 開  ki1  #开的正字
 開  ke1
-夫  fvu1
+夫  fu1
 夫  vu5
 天  tie1
-元  nyju4
-元  nyjue4
+元  njyu4
+元  njyue4
 無  vu5
 無  moo5
-韋  vju5 #韦的正字
-專  zjue1 #专的正字
+韋  vyu5 #韦的正字
+專  zyue1 #专的正字
 專  jyue1
 專  jyu1
-丐  keu3
-丐  geu3
+丐  ke3
+丐  ge3
 廿  nie8
 廿  zza7
 五  ngu6
@@ -78,23 +78,23 @@ version: "1.0.0"
 卅  so3
 卅  lo7
 不  ba3
-不  deu2
+不  de2
 冇  nao6
-友  xyao6
+友  zsao6
 友  iao6
 丑  cou2
 醜  cou2  #醜陋
 牙  ngoo5
-屯  dju5
+屯  dyu5
 屯  zong1
 互  vu8
 # 四畫
-末  meu7
+末  me7
 未  vei8
 擊  jie3 #击的正字
 正  zeng4
 正  zeng1
-甘  geu1
+甘  ge1
 且  cei2
 且  zou1
 可  koo2
@@ -120,19 +120,19 @@ version: "1.0.0"
 有  iao8  #吾十有五
 而  zzi5
 死  si2
-夷  xyii2
-夷  ii2
+夷  zsi2
+夷  i2
 丞  zeng5
-堯  nyo5
+堯  njio5
 至  zi4
 # 六畫
-嚴  nyi5 #严的正字
-巫  vju5
+嚴  nji5 #严的正字
+巫  vyu5
 求  jjiao5
-甫  fvu2
+甫  fu2
 更  ga1
 更  ga4
-束  xjuo3 
+束  xyuo3 
 兩  la6
 兩  liae6
 麗  lei8
@@ -150,28 +150,28 @@ version: "1.0.0"
 畫  va7
 畫  vuo8
 事  zzi8
-棗  zae
+棗  zae2
 並  beng6
-亟  jii3 ##
-亟  qii4
+亟  ji3 ##
+亟  qi4
 #八畫
 奏  zao4
 毒  dou7
 韭  jiao2
 甚  zzang8
-甚  zzang
+甚  zzang6
 巷  hho8
 柬  go2
 歪  wa1
 甭  bong2
 晝  zao4
 #九畫
-艷  xyie8 #艳的正字
+艷  zsie8 #艳的正字
 泰  ta4
 秦  zzang5
 恭  gong4 ##
-彧  veu3 ##
-哥  gvu1
+彧  ve3 ##
+哥  gu1
 鬲  ga3
 鬲  lei7
 孬  nae6
@@ -179,8 +179,9 @@ version: "1.0.0"
 #十畫以上
 焉  ie1  
 堇  jiang2 
-爽  sjuo
-甦  seju1
+爽  sio2
+爽  su2
+甦  seu1
 棘  jie7
 奡  ngae8
 皕  bei4
@@ -191,8 +192,8 @@ version: "1.0.0"
 賴  la8
 壽  zzou8
 爾  zzi6
-暨  jjii8
-奭  seo3
+暨  jji8
+奭  sei3
 賾  zza7
 鼒  zi1
 鼒  zze5
@@ -203,10 +204,10 @@ version: "1.0.0"
 整  zeng2
 噩  ngoo7
 臻  zang1
-鬴  fvu2
-釜  fvu2
+鬴  fu2
+釜  fu2
 釐  lei5
-醫  ii1
+醫  i1
 囊  noo5
 #丨部
 #二畫
@@ -219,11 +220,11 @@ version: "1.0.0"
 内  nai8
 吊  duoo4
 弔  duoo4
-書  seju1
+書  seu1
 卡  ka2
 卡  ko2
 北  bei3
-凸  ddeu7
+凸  dde7
 舊  jjiao8
 舊  jjiao5
 歸  jyu1
@@ -231,34 +232,34 @@ version: "1.0.0"
 甲  go3
 申  sang1
 電  ddie8
-由  xyiao5
-冉  xyie6
+由  zsiao5
+冉  zsie6
 冉  zzie6
 央  iae1
 史  si2
-半  beu4
+半  be4
 凹  o1
-出  cjueu3
-出  qjueu3
-齣  cjueu3
-齣  qjueu3
+出  cyue3
+出  qyue3
+齣  cyue3
+齣  qyue3
 #五至七畫
 師  si1
-抴  xyii7
-曳  xyii8
+抴  zsi7
+曳  zsi8
 曲  qiou8
-曲  qjuo8
+曲  qio8
 麯  qiou8
 麴  qiou8
-肉  nyou7
+肉  njiou7
 羋  mei6
-縣  xyie7
-縣  xyjue7
-串  qjue4
+縣  zsie7
+縣  zsyue7
+串  qyue4
 串  cong4
 非  fei1
-果  gvu2
-菓  gvu2
+果  gu2
+菓  gu2
 暢  ciae4
 暢  qiae4
 肅  sou3
@@ -268,17 +269,17 @@ version: "1.0.0"
 將  jiae1
 將  ziae4
 將  jiae4
-禺  nyju5
+禺  njyu5
 幽  iao1
 畢  bei3
 鼎  deng2
 嘦  jyue4
-冀  jii4
+冀  ji4
 豳  beng1
 #丿部
 #一至兩畫
 入  zza7
-乂  nyii8
+乂  nji8
 九  jiao2
 匕  bei2
 乃  na6
@@ -286,27 +287,28 @@ version: "1.0.0"
 廼  na6
 千  qie1
 韆  qie1
-乞  qii3
-川  qju1
+乞  qi3
+川  qyu1
 凡  vo5
 凢  vo5
 凣  vo5
-義  nyii8
+義  nji8
 麽  mo5
 麼  mo5
 庅  mo5
 久  jiao2
-丸  xyju5
+丸  zsyu5
 及  jjia7
 #三畫
-午  ngvu6
-壬  nyang5
+午  ngu6
+午  ng6
+壬  njiang5
 升  seng1
 昇  seng1
 陞  seng1
-夭  yeu1 #夭夭
-夭  yeu2
-殀  yeu2 #殀折
+夭  ye1 #夭夭
+夭  ye2
+殀  ye2 #殀折
 幣  bbei8
 反  fo2
 爻  hho5
@@ -324,27 +326,29 @@ version: "1.0.0"
 坵  qiao1
 卮  zei1
 巵  zei1
-乎  vvu5
-用  xyjuo8
+乎  vu5
+乎  fu5
+用  zsio8
+用  yu5
 甩  xia3
 氐  dei2
 氐  dei1
 樂  loo7  #與普通話不同，音樂的樂也是loo7
 樂  ngoo7 #樂清
-処  ceju2
-處  ceju2
-䖏  ceju2
-処  ceju4
-處  ceju4
-䖏  ceju4
+処  ceu2
+處  ceu2
+䖏  ceu2
+処  ceu4
+處  ceu4
+䖏  ceu4
 冬  ddong5
 鼕  ddong5
-務  vju8
+務  vyu8
 #五畫
-年  nyie5
-秊  nyie5
-硃  zeju1
-朱  zeju1
+年  njie5
+秊  njie5
+硃  zeu1
+朱  zeu1
 丟  dou1
 喬  jjyu5
 乒  peng1
@@ -359,32 +363,33 @@ version: "1.0.0"
 后  hhao6
 殺  so3
 兆  jyu6
-汆  ceu1
-危  nyju5
+汆  ce1
+危  njyu5
 各  goo3 #各種
 各  goo2 #各自
 色  sei3
 #六畫
-我  ngvu5
+我  ngu5
+我  ng5
 每  mei6
 兵  beng1
-兔  teju4
+兔  teu4
 囱  cong1
-希  xii1
-龜  ju1
+希  xi1
+龜  yu1
 龜  jiang1
 龜  jiao1
 卵  lang6
-係  jii4
-繫  xyii8
-系  xyii8
+係  ji4
+繫  zsi8
+系  zsi8
 #七畫
-垂  zjeu5
+垂  zeu5
 乖  ga1
 秉  bong2
-臾  vju5
+臾  vyu5
 卑  bai1
-阜  vau6
+阜  vao6
 質  za3
 肴  hho5
 餚  hho5
