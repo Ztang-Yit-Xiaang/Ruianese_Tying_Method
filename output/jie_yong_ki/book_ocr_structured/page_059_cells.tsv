@@ -1,0 +1,231 @@
+page	row	column	column_name	text	confidence	bbox	status	note
+059	1	1	radical_strokes	四	35.59	337,363,229,377	review	low_confidence
+059	1	2	hanzi	o	0.00	566,363,303,377	review	missing_hanzi
+059	1	3	pinyin	bia	34.82	869,363,263,377	review	low_confidence
+059	1	4	fanqie	反雪	37.85	1132,363,227,377	review	low_confidence
+059	1	5	tone	""""	0.00	1359,363,137,377	ok	
+059	1	6	rhyme	*	18.66	1496,363,138,377	review	low_confidence
+059	1	7	initial		0.00	1634,363,136,377	review	blank
+059	1	8	ipa		0.00	1770,363,226,377	review	blank
+059	1	9	homophone		0.00	1996,363,225,377	review	blank
+059	1	10	note	fe iE	55.29	2221,363,574,377	ok	
+059	2	1	radical_strokes		0.00	337,740,229,141	review	blank
+059	2	2	hanzi	Fi	53.04	566,740,303,141	review	missing_hanzi
+059	2	3	pinyin	mo	52.13	869,740,263,141	ok	
+059	2	4	fanqie	莫北，	72.93	1132,740,227,141	ok	
+059	2	5	tone	A	85.01	1359,740,137,141	ok	
+059	2	6	rhyme	德	87.42	1496,740,138,141	ok	
+059	2	7	initial	By	16.33	1634,740,136,141	review	low_confidence
+059	2	8	ipa	me)	10.97	1770,740,226,141	review	low_confidence
+059	2	9	homophone	时	1.89	1996,740,225,141	review	low_confidence
+059	2	10	note	万俊(复姓)	65.22	2221,740,574,141	ok	
+059	3	1	radical_strokes		0.00	337,881,229,144	review	blank
+059	3	2	hanzi	万(万)	72.30	566,881,303,144	ok	
+059	3	3	pinyin	wan	68.10	869,881,263,144	ok	
+059	3	4	fanqie	无县	22.42	1132,881,227,144	review	low_confidence
+059	3	5	tone	去	88.83	1359,881,137,144	ok	
+059	3	6	rhyme	i	62.57	1496,881,138,144	ok	
+059	3	7	initial	a	58.75	1634,881,136,144	ok	
+059	3	8	ipa		0.00	1770,881,226,144	review	blank
+059	3	9	homophone		0.00	1996,881,225,144	review	blank
+059	3	10	note		0.00	2221,881,574,144	review	blank
+059	4	1	radical_strokes	三画	63.86	337,1025,229,143	ok	
+059	4	2	hanzi	oe	0.00	566,1025,303,143	review	missing_hanzi
+059	4	3	pinyin	fang	67.35	869,1025,263,143	ok	
+059	4	4	fanqie	BA	75.80	1132,1025,227,143	ok	
+059	4	5	tone	平	81.94	1359,1025,137,143	ok	
+059	4	6	rhyme	si	24.79	1496,1025,138,143	review	low_confidence
+059	4	7	initial	ca	33.48	1634,1025,136,143	review	low_confidence
+059	4	8	ipa	cfun	78.45	1770,1025,226,143	ok	
+059	4	9	homophone	烽	45.98	1996,1025,225,143	ok	
+059	4	10	note		0.00	2221,1025,574,143	review	blank
+059	5	1	radical_strokes		0.00	337,1168,229,141	review	blank
+059	5	2	hanzi	Ca)	0.00	566,1168,303,141	review	missing_hanzi
+059	5	3	pinyin	feng	34.53	869,1168,263,141	review	low_confidence
+059	5	4	fanqie	ea	25.77	1132,1168,227,141	review	low_confidence
+059	5	5	tone	平	92.10	1359,1168,137,141	ok	
+059	5	6	rhyme	Ca	35.73	1496,1168,138,141	review	low_confidence
+059	5	7	initial	ca	42.11	1634,1168,136,141	review	low_confidence
+059	5	8	ipa	fun	47.17	1770,1168,226,141	ok	
+059	5	9	homophone		0.00	1996,1168,225,141	review	blank
+059	5	10	note		0.00	2221,1168,574,141	review	blank
+059	6	1	radical_strokes		0.00	337,1309,229,142	review	blank
+059	6	2	hanzi	je	39.68	566,1309,303,142	review	low_confidence,missing_hanzi
+059	6	3	pinyin	jing	92.95	869,1309,263,142	ok	
+059	6	4	fanqie	FR	47.97	1132,1309,227,142	ok	
+059	6	5	tone	上	42.72	1359,1309,137,142	review	low_confidence
+059	6	6	rhyme	天	13.83	1496,1309,138,142	review	low_confidence
+059	6	7	initial	精	83.96	1634,1309,136,142	ok	
+059	6	8	ipa		0.00	1770,1309,226,142	review	blank
+059	6	9	homophone	整:	55.73	1996,1309,225,142	ok	
+059	6	10	note	四	9.17	2221,1309,574,142	review	low_confidence
+059	7	1	radical_strokes		0.00	337,1451,229,142	review	blank
+059	7	2	hanzi	FT CBD	60.48	566,1451,303,142	review	missing_hanzi
+059	7	3	pinyin	kai	27.78	869,1451,263,142	review	low_confidence
+059	7	4	fanqie	ee	25.02	1132,1451,227,142	review	low_confidence
+059	7	5	tone	平	90.72	1359,1451,137,142	ok	
+059	7	6	rhyme	哈	36.98	1496,1451,138,142	review	low_confidence
+059	7	7	initial	KR	58.61	1634,1451,136,142	ok	
+059	7	8	ipa	ckhe	71.47	1770,1451,226,142	ok	
+059	7	9	homophone	an	34.77	1996,1451,225,142	review	low_confidence
+059	7	10	note		0.00	2221,1451,574,142	review	blank
+059	8	1	radical_strokes		0.00	337,1593,229,142	review	blank
+059	8	2	hanzi	Jf	25.98	566,1593,303,142	review	low_confidence,missing_hanzi
+059	8	3	pinyin	fa	62.21	869,1593,263,142	ok	
+059	8	4	fanqie	HA	45.35	1132,1593,227,142	ok	
+059	8	5	tone	平	91.67	1359,1593,137,142	ok	
+059	8	6	rhyme	K	48.12	1496,1593,138,142	ok	
+059	8	7	initial	非	86.04	1634,1593,136,142	ok	
+059	8	8	ipa	fw	51.49	1770,1593,226,142	ok	
+059	8	9	homophone	mee	23.98	1996,1593,225,142	review	low_confidence
+059	8	10	note	农夫	93.45	2221,1593,574,142	ok	
+059	9	1	radical_strokes		0.00	337,1735,229,144	review	blank
+059	9	2	hanzi		0.00	566,1735,303,144	review	blank
+059	9	3	pinyin	fu	77.31	869,1735,263,144	ok	
+059	9	4	fanqie	Bi Ae	34.70	1132,1735,227,144	review	low_confidence
+059	9	5	tone	平	90.86	1359,1735,137,144	ok	
+059	9	6	rhyme	ce	29.71	1496,1735,138,144	review	low_confidence
+059	9	7	initial	r=	24.80	1634,1735,136,144	review	low_confidence
+059	9	8	ipa	vw	21.68	1770,1735,226,144	review	low_confidence
+059	9	9	homophone		0.00	1996,1735,225,144	review	blank
+059	9	10	note	发语词	88.27	2221,1735,574,144	ok	
+059	10	1	radical_strokes		0.00	337,1879,229,141	review	blank
+059	10	2	hanzi	K	80.97	566,1879,303,141	review	missing_hanzi
+059	10	3	pinyin	tian	94.29	869,1879,263,141	ok	
+059	10	4	fanqie	他前	95.31	1132,1879,227,141	ok	
+059	10	5	tone	平	76.91	1359,1879,137,141	ok	
+059	10	6	rhyme	先	76.23	1496,1879,138,141	ok	
+059	10	7	initial	透	63.20	1634,1879,136,141	ok	
+059	10	8	ipa	cthie	87.34	1770,1879,226,141	ok	
+059	10	9	homophone	Ry	41.24	1996,1879,225,141	review	low_confidence
+059	10	10	note		0.00	2221,1879,574,141	review	blank
+059	11	1	radical_strokes		0.00	337,2020,229,142	review	blank
+059	11	2	hanzi	元	57.19	566,2020,303,142	ok	
+059	11	3	pinyin	yuan	92.29	869,2020,263,142	ok	
+059	11	4	fanqie		0.00	1132,2020,227,142	review	blank
+059	11	5	tone	平	91.67	1359,2020,137,142	ok	
+059	11	6	rhyme	元	95.67	1496,2020,138,142	ok	
+059	11	7	initial		0.00	1634,2020,136,142	review	blank
+059	11	8	ipa	cThyo	42.84	1770,2020,226,142	review	low_confidence
+059	11	9	homophone	原	91.40	1996,2020,225,142	ok	
+059	11	10	note		0.00	2221,2020,574,142	review	blank
+059	12	1	radical_strokes		0.00	337,2162,229,144	review	blank
+059	12	2	hanzi	无(无)	81.81	566,2162,303,144	ok	
+059	12	3	pinyin	wu	78.55	869,2162,263,144	ok	
+059	12	4	fanqie	武夫	94.54	1132,2162,227,144	ok	
+059	12	5	tone	平	86.18	1359,2162,137,144	ok	
+059	12	6	rhyme	广	47.16	1496,2162,138,144	ok	
+059	12	7	initial	BY	26.94	1634,2162,136,144	review	low_confidence
+059	12	8	ipa	¢VW	56.52	1770,2162,226,144	ok	
+059	12	9	homophone	河”	79.83	1996,2162,225,144	ok	
+059	12	10	note		0.00	2221,2162,574,144	review	blank
+059	13	1	radical_strokes		0.00	337,2306,229,263	review	blank
+059	13	2	hanzi		0.00	566,2306,303,263	review	blank
+059	13	3	pinyin	mo	85.43	869,2306,263,263	ok	
+059	13	4	fanqie		0.00	1132,2306,227,263	review	blank
+059	13	5	tone		0.00	1359,2306,137,263	review	blank
+059	13	6	rhyme		0.00	1496,2306,138,263	review	blank
+059	13	7	initial		0.00	1634,2306,136,263	review	blank
+059	13	8	ipa	co	23.51	1770,2306,226,263	review	low_confidence
+059	13	9	homophone		0.00	1996,2306,225,263	review	blank
+059	13	10	note	he ot 语音	64.04	2221,2306,574,263	ok	
+059	14	1	radical_strokes		0.00	337,2569,229,150	review	blank
+059	14	2	hanzi	韦(章)	73.30	566,2569,303,150	ok	
+059	14	3	pinyin	Wei	88.22	869,2569,263,150	ok	
+059	14	4	fanqie	AE	34.90	1132,2569,227,150	review	low_confidence
+059	14	5	tone	平	88.41	1359,2569,137,150	ok	
+059	14	6	rhyme	微	81.61	1496,2569,138,150	ok	
+059	14	7	initial	于	93.80	1634,2569,136,150	ok	
+059	14	8	ipa	cVU	25.25	1770,2569,226,150	review	low_confidence
+059	14	9	homophone	转	58.16	1996,2569,225,150	ok	
+059	14	10	note		0.00	2221,2569,574,150	review	blank
+059	15	1	radical_strokes	7	21.73	337,2719,229,263	review	low_confidence
+059	15	2	hanzi	ee	43.18	566,2719,303,263	review	low_confidence,missing_hanzi
+059	15	3	pinyin	zhuan	91.64	869,2719,263,263	ok	
+059	15	4	fanqie	职缘	77.11	1132,2719,227,263	ok	
+059	15	5	tone	#	1.32	1359,2719,137,263	review	low_confidence
+059	15	6	rhyme	4	40.59	1496,2719,138,263	review	low_confidence
+059	15	7	initial		0.00	1634,2719,136,263	review	blank
+059	15	8	ipa	ctSyea	12.19	1770,2719,226,263	review	low_confidence
+059	15	9	homophone	aa	41.14	1996,2719,225,263	review	low_confidence
+059	15	10	note	cteya(骄)	67.62	2221,2719,574,263	ok	
+059	16	1	radical_strokes		0.00	337,2982,229,159	review	blank
+059	16	2	hanzi	ae	23.57	566,2982,303,159	review	low_confidence,missing_hanzi
+059	16	3	pinyin	gai	51.39	869,2982,263,159	ok	
+059	16	4	fanqie	届昌	62.58	1132,2982,227,159	ok	
+059	16	5	tone		0.00	1359,2982,137,159	review	blank
+059	16	6	rhyme		0.00	1496,2982,138,159	review	blank
+059	16	7	initial		0.00	1634,2982,136,159	review	blank
+059	16	8	ipa	le	25.44	1770,2982,226,159	review	low_confidence
+059	16	9	homophone		0.00	1996,2982,225,159	review	blank
+059	16	10	note	俗音 kha, (渴)	71.73	2221,2982,574,159	ok	
+059	17	1	radical_strokes	pe	0.00	337,3141,229,159	ok	
+059	17	2	hanzi	th	70.61	566,3141,303,159	review	missing_hanzi
+059	17	3	pinyin	nian	96.29	869,3141,263,159	ok	
+059	17	4	fanqie	dR	55.85	1132,3141,227,159	ok	
+059	17	5	tone	A	63.39	1359,3141,137,159	ok	
+059	17	6	rhyme	缉	52.80	1496,3141,138,159	ok	
+059	17	7	initial	日	70.64	1634,3141,136,159	ok	
+059	17	8	ipa	ZQ)	80.55	1770,3141,226,159	ok	
+059	17	9	homophone	co	19.30	1996,3141,225,159	review	low_confidence
+059	17	10	note	俗音 nize’ (念)	73.53	2221,3141,574,159	ok	
+059	18	1	radical_strokes	国力	6.18	337,3300,229,159	review	low_confidence
+059	18	2	hanzi	五	58.50	566,3300,303,159	ok	
+059	18	3	pinyin	Wu	77.95	869,3300,263,159	ok	
+059	18	4	fanqie	a	50.12	1132,3300,227,159	ok	
+059	18	5	tone	上	68.33	1359,3300,137,159	ok	
+059	18	6	rhyme	We	58.84	1496,3300,138,159	ok	
+059	18	7	initial	E:	40.78	1634,3300,136,159	review	low_confidence
+059	18	8	ipa		0.00	1770,3300,226,159	review	blank
+059	18	9	homophone	午	16.86	1996,3300,225,159	review	low_confidence
+059	18	10	note		0.00	2221,3300,574,159	review	blank
+059	19	1	radical_strokes	po	7.48	337,3459,229,158	review	low_confidence
+059	19	2	hanzi	(i CT)	44.11	566,3459,303,158	review	low_confidence,missing_hanzi
+059	19	3	pinyin	2a	44.67	869,3459,263,158	review	low_confidence
+059	19	4	fanqie	子竺	41.66	1132,3459,227,158	review	low_confidence
+059	19	5	tone	入	64.85	1359,3459,137,158	ok	
+059	19	6	rhyme	合	85.24	1496,3459,138,158	ok	
+059	19	7	initial	精	91.57	1634,3459,136,158	ok	
+059	19	8	ipa	tsg)	23.56	1770,3459,226,158	review	low_confidence
+059	19	9	homophone	a	23.92	1996,3459,225,158	review	low_confidence
+059	19	10	note	俗音 tso FL)	82.78	2221,3459,574,158	ok	
+059	20	1	radical_strokes	_	0.00	337,3617,229,159	suspicious	grid_noise
+059	20	2	hanzi	oR	38.63	566,3617,303,159	review	low_confidence,missing_hanzi
+059	20	3	pinyin	mian	92.23	869,3617,263,159	ok	
+059	20	4	fanqie	cca	40.69	1132,3617,227,159	review	low_confidence
+059	20	5	tone	0	32.40	1359,3617,137,159	review	low_confidence
+059	20	6	rhyme		88.15	1496,3617,138,159	review	blank
+059	20	7	initial	0	29.52	1634,3617,136,159	review	low_confidence
+059	20	8	ipa	mie	0.00	1770,3617,226,159	ok	
+059	20	9	homophone	cs	24.87	1996,3617,225,159	review	low_confidence
+059	20	10	note		0.00	2221,3617,574,159	review	blank
+059	21	1	radical_strokes	p	22.09	337,3776,229,159	review	low_confidence
+059	21	2	hanzi	th	0.00	566,3776,303,159	review	missing_hanzi
+059	21	3	pinyin	sa	57.79	869,3776,263,159	ok	
+059	21	4	fanqie	aA	36.37	1132,3776,227,159	review	low_confidence
+059	21	5	tone	入	60.90	1359,3776,137,159	ok	
+059	21	6	rhyme	合	85.84	1496,3776,138,159	ok	
+059	21	7	initial	a	11.76	1634,3776,136,159	review	low_confidence
+059	21	8	ipa	SO»	68.08	1770,3776,226,159	ok	
+059	21	9	homophone	条，	54.49	1996,3776,225,159	ok	
+059	21	10	note		0.00	2221,3776,574,159	review	blank
+059	22	1	radical_strokes	p	17.29	337,3935,229,159	review	low_confidence
+059	22	2	hanzi	po	22.58	566,3935,303,159	review	low_confidence,missing_hanzi
+059	22	3	pinyin		0.00	869,3935,263,159	review	blank
+059	22	4	fanqie	Aba	41.18	1132,3935,227,159	review	low_confidence
+059	22	5	tone	入	55.92	1359,3935,137,159	ok	
+059	22	6	rhyme	cE	19.54	1496,3935,138,159	review	low_confidence
+059	22	7	initial	a	8.29	1634,3935,136,159	review	low_confidence
+059	22	8	ipa	SO)	45.16	1770,3935,226,159	ok	
+059	22	9	homophone	条，	53.83	1996,3935,225,159	ok	
+059	22	10	note	俗音 ja (ID	74.11	2221,3935,574,159	ok	
+059	23	1	radical_strokes	p	18.62	337,4094,229,159	review	low_confidence
+059	23	2	hanzi	不	51.54	566,4094,303,159	ok	
+059	23	3	pinyin	ba	37.87	869,4094,263,159	review	low_confidence
+059	23	4	fanqie	分物	90.26	1132,4094,227,159	ok	
+059	23	5	tone	入	59.11	1359,4094,137,159	ok	
+059	23	6	rhyme	物	57.00	1496,4094,138,159	ok	
+059	23	7	initial	Ea	57.95	1634,4094,136,159	ok	
+059	23	8	ipa	po	35.52	1770,4094,226,159	review	low_confidence
+059	23	9	homophone	St	4.79	1996,4094,225,159	review	low_confidence
+059	23	10	note	pe	7.21	2221,4094,574,159	review	low_confidence

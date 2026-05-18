@@ -1,0 +1,49 @@
+line	char	old_code	code	source	note	status
+35	于	ju1	ju1	ruianese.character_01.dict.yaml:35	no valid mapping; tried ju1	unresolved
+45	與	vju6	vju6	ruianese.character_01.dict.yaml:45	no valid mapping; tried vju6; 与的正字	unresolved
+46	與	vju8	vju8	ruianese.character_01.dict.yaml:46	no valid mapping; tried vju8	unresolved
+47	與	vju5	vju5	ruianese.character_01.dict.yaml:47	no valid mapping; tried vju5	unresolved
+63	韋	vju5	vju5	ruianese.character_01.dict.yaml:63	no valid mapping; tried vju5; 韦的正字	unresolved
+64	專	zjue1	zjue1	ruianese.character_01.dict.yaml:64	no valid mapping; tried zjue1; 专的正字	unresolved
+88	屯	dju5	dju5	ruianese.character_01.dict.yaml:88	no valid mapping; tried dju5	unresolved
+130	巫	vju5	vju5	ruianese.character_01.dict.yaml:130	no valid mapping; tried vju5	unresolved
+135	束	xjuo3	xjuo3	ruianese.character_01.dict.yaml:135	no valid mapping; tried xjuo3	unresolved
+146	忝	tiae1	tiae1	ruianese.character_01.dict.yaml:146	no valid mapping; tried tiae1	unresolved
+165	歪	wa1	wa1	ruianese.character_01.dict.yaml:165	no valid mapping; tried wa1	unresolved
+174	哥	gvu1	gvu1	ruianese.character_01.dict.yaml:174	no valid mapping; tried gvu1	unresolved
+182	爽	sjuo	sjuo	ruianese.character_01.dict.yaml:182	no valid mapping; tried sjuo	unresolved
+183	甦	seju1	seju1	ruianese.character_01.dict.yaml:183	no valid mapping; tried seju1	unresolved
+195	奭	seo3	seo3	ruianese.character_01.dict.yaml:195	no valid mapping; tried seo3	unresolved
+200	黇	tiae1	tiae1	ruianese.character_01.dict.yaml:200	no valid mapping; tried tiae1	unresolved
+222	書	seju1	seju1	ruianese.character_01.dict.yaml:222	no valid mapping; tried seju1	unresolved
+241	出	cjueu3	cjueu3	ruianese.character_01.dict.yaml:241	no valid mapping; tried cjueu3, cjue3	unresolved
+243	齣	cjueu3	cjueu3	ruianese.character_01.dict.yaml:243	no valid mapping; tried cjueu3, cjue3	unresolved
+250	曲	qjuo8	qjuo8	ruianese.character_01.dict.yaml:250	no valid mapping; tried qjuo8	unresolved
+253	肉	nyou7	nyou7	ruianese.character_01.dict.yaml:253	no valid mapping; tried nyou7, njou7	unresolved
+260	果	gvu2	gvu2	ruianese.character_01.dict.yaml:260	no valid mapping; tried gvu2	unresolved
+261	菓	gvu2	gvu2	ruianese.character_01.dict.yaml:261	no valid mapping; tried gvu2	unresolved
+262	暢	ciae4	ciae4	ruianese.character_01.dict.yaml:262	no valid mapping; tried ciae4	unresolved
+267	將	ziae1	ziae1	ruianese.character_01.dict.yaml:267	no valid mapping; tried ziae1	unresolved
+269	將	ziae4	ziae4	ruianese.character_01.dict.yaml:269	no valid mapping; tried ziae4	unresolved
+290	川	qju1	qju1	ruianese.character_01.dict.yaml:290	no valid mapping; tried qju1	unresolved
+302	午	ngvu6	ngvu6	ruianese.character_01.dict.yaml:302	no valid mapping; tried ngvu6	unresolved
+303	壬	nyang5	nyang5	ruianese.character_01.dict.yaml:303	no valid mapping; tried nyang5, njang5	unresolved
+307	夭	yeu1	yeu1	ruianese.character_01.dict.yaml:307	no valid mapping; tried yeu1, ye1; 夭夭	unresolved
+308	夭	yeu2	yeu2	ruianese.character_01.dict.yaml:308	no valid mapping; tried yeu2, ye2	unresolved
+309	殀	yeu2	yeu2	ruianese.character_01.dict.yaml:309	no valid mapping; tried yeu2, ye2; 殀折	unresolved
+328	用	xyjuo8	xyjuo8	ruianese.character_01.dict.yaml:328	no valid mapping; tried xyjuo8, xjuo8	unresolved
+334	処	ceju2	ceju2	ruianese.character_01.dict.yaml:334	no valid mapping; tried ceju2	unresolved
+335	處	ceju2	ceju2	ruianese.character_01.dict.yaml:335	no valid mapping; tried ceju2	unresolved
+336	䖏	ceju2	ceju2	ruianese.character_01.dict.yaml:336	no valid mapping; tried ceju2	unresolved
+337	処	ceju4	ceju4	ruianese.character_01.dict.yaml:337	no valid mapping; tried ceju4	unresolved
+338	處	ceju4	ceju4	ruianese.character_01.dict.yaml:338	no valid mapping; tried ceju4	unresolved
+339	䖏	ceju4	ceju4	ruianese.character_01.dict.yaml:339	no valid mapping; tried ceju4	unresolved
+342	務	vju8	vju8	ruianese.character_01.dict.yaml:342	no valid mapping; tried vju8	unresolved
+346	硃	zeju1	zeju1	ruianese.character_01.dict.yaml:346	no valid mapping; tried zeju1	unresolved
+347	朱	zeju1	zeju1	ruianese.character_01.dict.yaml:347	no valid mapping; tried zeju1	unresolved
+368	我	ngvu5	ngvu5	ruianese.character_01.dict.yaml:368	no valid mapping; tried ngvu5	unresolved
+371	兔	teju4	teju4	ruianese.character_01.dict.yaml:371	no valid mapping; tried teju4	unresolved
+374	龜	ju1	ju1	ruianese.character_01.dict.yaml:374	no valid mapping; tried ju1	unresolved
+382	垂	zjeu5	zjeu5	ruianese.character_01.dict.yaml:382	no valid mapping; tried zjeu5, zje5	unresolved
+385	臾	vju5	vju5	ruianese.character_01.dict.yaml:385	no valid mapping; tried vju5	unresolved
+387	阜	vau6	vau6	ruianese.character_01.dict.yaml:387	no valid mapping; tried vau6	unresolved

@@ -1,0 +1,345 @@
+char	code	weight	source	note	old_code	status
+一	ia3	1	ruianese.character_01.dict.yaml:24	already valid	ia3	ok
+丁	deng1	1	ruianese.character_01.dict.yaml:26	already valid	deng1	ok
+丁	zang1	1	ruianese.character_01.dict.yaml:27	already valid	zang1	ok
+七	ca3	1	ruianese.character_01.dict.yaml:28	already valid	ca3	ok
+三	so1	1	ruianese.character_01.dict.yaml:30	already valid	so1	ok
+乾	ge1	1	ruianese.character_01.dict.yaml:32	geu1->ge1; 乾燥	geu1	converted
+幹	ge4	1	ruianese.character_01.dict.yaml:33	geu4->ge4; 軀幹，幹嘛	geu4	converted
+榦	ge4	1	ruianese.character_01.dict.yaml:34	geu4->ge4; 幹之異體字	geu4	converted
+于	ju1	1	ruianese.character_01.dict.yaml:35	no valid mapping; tried ju1	ju1	unresolved
+上	xiae6	1	ruianese.character_01.dict.yaml:36	xyiae6->xiae6	xyiae6	converted
+上	xiae8	1	ruianese.character_01.dict.yaml:37	xyiae8->xiae8	xyiae8	converted
+才	zei5	1	ruianese.character_01.dict.yaml:38	already valid	zei5	ok
+纔	zzei6	1	ruianese.character_01.dict.yaml:39	dzei6->zzei6; 副詞才的正字	dzei6	converted
+下	hhoe6	1	ruianese.character_01.dict.yaml:40	hhoo6->hhoe6	hhoo6	converted
+下	hhoe8	1	ruianese.character_01.dict.yaml:41	hhoo8->hhoe8	hhoo8	converted
+丈	jjia6	1	ruianese.character_01.dict.yaml:42	already valid	jjia6	ok
+丈	zzia6	1	ruianese.character_01.dict.yaml:43	dzia6->zzia6	dzia6	converted
+兀	nge7	1	ruianese.character_01.dict.yaml:44	ngeu7->nge7	ngeu7	converted
+與	vju6	1	ruianese.character_01.dict.yaml:45	no valid mapping; tried vju6; 与的正字	vju6	unresolved
+與	vju8	1	ruianese.character_01.dict.yaml:46	no valid mapping; tried vju8	vju8	unresolved
+與	vju5	1	ruianese.character_01.dict.yaml:47	no valid mapping; tried vju5	vju5	unresolved
+万	vo4	1	ruianese.character_01.dict.yaml:48	already valid	vo4	ok
+萬	mo5	1	ruianese.character_01.dict.yaml:49	already valid	mo5	ok
+丰	fong1	1	ruianese.character_01.dict.yaml:51	already valid	fong1	ok
+豐	fong1	1	ruianese.character_01.dict.yaml:52	already valid	fong1	ok
+井	zeng2	1	ruianese.character_01.dict.yaml:53	already valid	zeng2	ok
+開	ki1	1	ruianese.character_01.dict.yaml:54	already valid; 开的正字	ki1	ok
+開	ke1	1	ruianese.character_01.dict.yaml:55	already valid	ke1	ok
+夫	fu1	1	ruianese.character_01.dict.yaml:56	fvu1->fu1	fvu1	converted
+夫	vu5	1	ruianese.character_01.dict.yaml:57	already valid	vu5	ok
+天	tie1	1	ruianese.character_01.dict.yaml:58	already valid	tie1	ok
+元	njyu4	1	ruianese.character_01.dict.yaml:59	nyju4->njyu4	nyju4	converted
+元	njyue4	1	ruianese.character_01.dict.yaml:60	nyjue4->njyue4	nyjue4	converted
+無	vu5	1	ruianese.character_01.dict.yaml:61	already valid	vu5	ok
+無	moe5	1	ruianese.character_01.dict.yaml:62	moo5->moe5	moo5	converted
+韋	vju5	1	ruianese.character_01.dict.yaml:63	no valid mapping; tried vju5; 韦的正字	vju5	unresolved
+專	zjue1	1	ruianese.character_01.dict.yaml:64	no valid mapping; tried zjue1; 专的正字	zjue1	unresolved
+專	jyue1	1	ruianese.character_01.dict.yaml:65	already valid	jyue1	ok
+專	jyu1	1	ruianese.character_01.dict.yaml:66	already valid	jyu1	ok
+丐	ke3	1	ruianese.character_01.dict.yaml:67	keu3->ke3	keu3	converted
+丐	ge3	1	ruianese.character_01.dict.yaml:68	geu3->ge3	geu3	converted
+廿	nie8	1	ruianese.character_01.dict.yaml:69	already valid	nie8	ok
+廿	zza7	1	ruianese.character_01.dict.yaml:70	already valid	zza7	ok
+五	ngu6	1	ruianese.character_01.dict.yaml:71	already valid	ngu6	ok
+匝	ze3	1	ruianese.character_01.dict.yaml:72	already valid	ze3	ok
+帀	ze3	1	ruianese.character_01.dict.yaml:73	already valid	ze3	ok
+匝	zo3	1	ruianese.character_01.dict.yaml:74	already valid	zo3	ok
+帀	zo3	1	ruianese.character_01.dict.yaml:75	already valid	zo3	ok
+丏	mi6	1	ruianese.character_01.dict.yaml:76	already valid	mi6	ok
+丏	mie6	1	ruianese.character_01.dict.yaml:77	already valid	mie6	ok
+卅	so3	1	ruianese.character_01.dict.yaml:78	already valid	so3	ok
+卅	lo7	1	ruianese.character_01.dict.yaml:79	already valid	lo7	ok
+不	ba3	1	ruianese.character_01.dict.yaml:80	already valid	ba3	ok
+不	de2	1	ruianese.character_01.dict.yaml:81	deu2->de2	deu2	converted
+冇	nao6	1	ruianese.character_01.dict.yaml:82	already valid	nao6	ok
+友	xiao6	1	ruianese.character_01.dict.yaml:83	xyao6->xiao6	xyao6	converted
+友	iao6	1	ruianese.character_01.dict.yaml:84	already valid	iao6	ok
+丑	cou2	1	ruianese.character_01.dict.yaml:85	already valid	cou2	ok
+醜	cou2	1	ruianese.character_01.dict.yaml:86	already valid; 醜陋	cou2	ok
+牙	ngoe5	1	ruianese.character_01.dict.yaml:87	ngoo5->ngoe5	ngoo5	converted
+屯	dju5	1	ruianese.character_01.dict.yaml:88	no valid mapping; tried dju5	dju5	unresolved
+屯	zong1	1	ruianese.character_01.dict.yaml:89	already valid	zong1	ok
+互	vu8	1	ruianese.character_01.dict.yaml:90	already valid	vu8	ok
+末	me7	1	ruianese.character_01.dict.yaml:92	meu7->me7	meu7	converted
+未	vei8	1	ruianese.character_01.dict.yaml:93	already valid	vei8	ok
+擊	jie3	1	ruianese.character_01.dict.yaml:94	already valid; 击的正字	jie3	ok
+正	zeng4	1	ruianese.character_01.dict.yaml:95	already valid	zeng4	ok
+正	zeng1	1	ruianese.character_01.dict.yaml:96	already valid	zeng1	ok
+甘	ge1	1	ruianese.character_01.dict.yaml:97	geu1->ge1	geu1	converted
+且	cei2	1	ruianese.character_01.dict.yaml:98	already valid	cei2	ok
+且	zou1	1	ruianese.character_01.dict.yaml:99	already valid	zou1	ok
+可	koe2	1	ruianese.character_01.dict.yaml:100	koo2->koe2	koo2	converted
+可	koe4	1	ruianese.character_01.dict.yaml:101	koo4->koe4	koo4	converted
+冊	ca3	1	ruianese.character_01.dict.yaml:102	already valid; 册的正字	ca3	ok
+丙	beng2	1	ruianese.character_01.dict.yaml:103	already valid	beng2	ok
+平	beng5	1	ruianese.character_01.dict.yaml:104	already valid	beng5	ok
+東	dong1	1	ruianese.character_01.dict.yaml:105	already valid; 东的正字	dong1	ok
+絲	si1	1	ruianese.character_01.dict.yaml:106	already valid; 丝的正字	si1	ok
+攷	kae2	1	ruianese.character_01.dict.yaml:108	already valid	kae2	ok
+考	kae2	1	ruianese.character_01.dict.yaml:109	already valid	kae2	ok
+老	lae6	1	ruianese.character_01.dict.yaml:110	already valid	lae6	ok
+共	jjyo8	1	ruianese.character_01.dict.yaml:111	already valid	jjyo8	ok
+共	jyo1	1	ruianese.character_01.dict.yaml:112	already valid; 共工	jyo1	ok
+亞	oe4	1	ruianese.character_01.dict.yaml:113	oo4->oe4	oo4	converted
+亙	gang4	1	ruianese.character_01.dict.yaml:114	already valid; 亘的正字	gang4	ok
+吏	lei8	1	ruianese.character_01.dict.yaml:115	already valid	lei8	ok
+再	zei4	1	ruianese.character_01.dict.yaml:116	already valid; #	zei4	ok
+在	zzei6	1	ruianese.character_01.dict.yaml:117	already valid; #	zzei6	ok
+百	ba3	1	ruianese.character_01.dict.yaml:118	already valid	ba3	ok
+有	iao6	1	ruianese.character_01.dict.yaml:119	already valid	iao6	ok
+有	iao8	1	ruianese.character_01.dict.yaml:120	already valid; 吾十有五	iao8	ok
+而	zzi5	1	ruianese.character_01.dict.yaml:121	already valid	zzi5	ok
+死	si2	1	ruianese.character_01.dict.yaml:122	already valid	si2	ok
+夷	xi2	1	ruianese.character_01.dict.yaml:123	xyii2->xi2	xyii2	converted
+夷	i2	1	ruianese.character_01.dict.yaml:124	ii2->i2	ii2	converted
+丞	zeng5	1	ruianese.character_01.dict.yaml:125	already valid	zeng5	ok
+堯	nyo5	1	ruianese.character_01.dict.yaml:126	already valid	nyo5	ok
+至	zi4	1	ruianese.character_01.dict.yaml:127	already valid	zi4	ok
+嚴	nji5	1	ruianese.character_01.dict.yaml:129	nyi5->nji5; 严的正字	nyi5	converted
+巫	vju5	1	ruianese.character_01.dict.yaml:130	no valid mapping; tried vju5	vju5	unresolved
+求	jjiao5	1	ruianese.character_01.dict.yaml:131	already valid	jjiao5	ok
+甫	fu2	1	ruianese.character_01.dict.yaml:132	fvu2->fu2	fvu2	converted
+更	ga1	1	ruianese.character_01.dict.yaml:133	already valid	ga1	ok
+更	ga4	1	ruianese.character_01.dict.yaml:134	already valid	ga4	ok
+束	xjuo3	1	ruianese.character_01.dict.yaml:135	no valid mapping; tried xjuo3	xjuo3	unresolved
+兩	la6	1	ruianese.character_01.dict.yaml:136	already valid	la6	ok
+兩	liae6	1	ruianese.character_01.dict.yaml:137	already valid	liae6	ok
+麗	lei8	1	ruianese.character_01.dict.yaml:138	already valid	lei8	ok
+麗	lei5	1	ruianese.character_01.dict.yaml:139	already valid	lei5	ok
+來	lei5	1	ruianese.character_01.dict.yaml:140	already valid; #	lei5	ok
+奉	vong6	1	ruianese.character_01.dict.yaml:142	already valid	vong6	ok
+武	vu6	1	ruianese.character_01.dict.yaml:143	already valid	vu6	ok
+錶	bi2	1	ruianese.character_01.dict.yaml:144	already valid; #	bi2	ok
+表	bi2	1	ruianese.character_01.dict.yaml:145	already valid	bi2	ok
+忝	tiae1	1	ruianese.character_01.dict.yaml:146	no valid mapping; tried tiae1	tiae1	unresolved
+長	jiae2	1	ruianese.character_01.dict.yaml:147	already valid	jiae2	ok
+長	jjiae5	1	ruianese.character_01.dict.yaml:148	already valid	jjiae5	ok
+其	jji5	1	ruianese.character_01.dict.yaml:149	already valid	jji5	ok
+畫	va7	1	ruianese.character_01.dict.yaml:150	already valid	va7	ok
+畫	vuo8	1	ruianese.character_01.dict.yaml:151	already valid	vuo8	ok
+事	zzi8	1	ruianese.character_01.dict.yaml:152	already valid	zzi8	ok
+棗	zae	1	ruianese.character_01.dict.yaml:153	already valid	zae	ok
+並	beng6	1	ruianese.character_01.dict.yaml:154	already valid	beng6	ok
+亟	ji3	1	ruianese.character_01.dict.yaml:155	jii3->ji3; #	jii3	converted
+亟	qi4	1	ruianese.character_01.dict.yaml:156	qii4->qi4	qii4	converted
+奏	zao4	1	ruianese.character_01.dict.yaml:158	already valid	zao4	ok
+毒	dou7	1	ruianese.character_01.dict.yaml:159	already valid	dou7	ok
+韭	jiao2	1	ruianese.character_01.dict.yaml:160	already valid	jiao2	ok
+甚	zzang8	1	ruianese.character_01.dict.yaml:161	already valid	zzang8	ok
+甚	zzang	1	ruianese.character_01.dict.yaml:162	already valid	zzang	ok
+巷	hho8	1	ruianese.character_01.dict.yaml:163	already valid	hho8	ok
+柬	go2	1	ruianese.character_01.dict.yaml:164	already valid	go2	ok
+歪	wa1	1	ruianese.character_01.dict.yaml:165	no valid mapping; tried wa1	wa1	unresolved
+甭	bong2	1	ruianese.character_01.dict.yaml:166	already valid	bong2	ok
+晝	zao4	1	ruianese.character_01.dict.yaml:167	already valid	zao4	ok
+艷	xie8	1	ruianese.character_01.dict.yaml:169	xyie8->xie8; 艳的正字	xyie8	converted
+泰	ta4	1	ruianese.character_01.dict.yaml:170	already valid	ta4	ok
+秦	zzang5	1	ruianese.character_01.dict.yaml:171	already valid	zzang5	ok
+恭	gong4	1	ruianese.character_01.dict.yaml:172	already valid; #	gong4	ok
+彧	ve3	1	ruianese.character_01.dict.yaml:173	veu3->ve3; #	veu3	converted
+哥	gvu1	1	ruianese.character_01.dict.yaml:174	no valid mapping; tried gvu1	gvu1	unresolved
+鬲	ga3	1	ruianese.character_01.dict.yaml:175	already valid	ga3	ok
+鬲	lei7	1	ruianese.character_01.dict.yaml:176	already valid	lei7	ok
+孬	nae6	1	ruianese.character_01.dict.yaml:177	already valid	nae6	ok
+夏	hho8	1	ruianese.character_01.dict.yaml:178	already valid	hho8	ok
+焉	ie1	1	ruianese.character_01.dict.yaml:180	already valid	ie1	ok
+堇	jiang2	1	ruianese.character_01.dict.yaml:181	already valid	jiang2	ok
+爽	sjuo	1	ruianese.character_01.dict.yaml:182	no valid mapping; tried sjuo	sjuo	unresolved
+甦	seju1	1	ruianese.character_01.dict.yaml:183	no valid mapping; tried seju1	seju1	unresolved
+棘	jie7	1	ruianese.character_01.dict.yaml:184	already valid	jie7	ok
+奡	ngae8	1	ruianese.character_01.dict.yaml:185	already valid	ngae8	ok
+皕	bei4	1	ruianese.character_01.dict.yaml:186	already valid	bei4	ok
+尠	sie2	1	ruianese.character_01.dict.yaml:187	already valid	sie2	ok
+尠	xie2	1	ruianese.character_01.dict.yaml:188	already valid	xie2	ok
+尟	sie2	1	ruianese.character_01.dict.yaml:189	already valid	sie2	ok
+尟	xie2	1	ruianese.character_01.dict.yaml:190	already valid	xie2	ok
+賴	la8	1	ruianese.character_01.dict.yaml:191	already valid	la8	ok
+壽	zzou8	1	ruianese.character_01.dict.yaml:192	already valid	zzou8	ok
+爾	zzi6	1	ruianese.character_01.dict.yaml:193	already valid	zzi6	ok
+暨	jji8	1	ruianese.character_01.dict.yaml:194	jjii8->jji8	jjii8	converted
+奭	seo3	1	ruianese.character_01.dict.yaml:195	no valid mapping; tried seo3	seo3	unresolved
+賾	zza7	1	ruianese.character_01.dict.yaml:196	already valid	zza7	ok
+鼒	zi1	1	ruianese.character_01.dict.yaml:197	already valid	zi1	ok
+鼒	zze5	1	ruianese.character_01.dict.yaml:198	already valid	zze5	ok
+憂	iao1	1	ruianese.character_01.dict.yaml:199	already valid	iao1	ok
+黇	tiae1	1	ruianese.character_01.dict.yaml:200	no valid mapping; tried tiae1	tiae1	unresolved
+黇	zie1	1	ruianese.character_01.dict.yaml:201	already valid	zie1	ok
+黇	jie1	1	ruianese.character_01.dict.yaml:202	already valid	jie1	ok
+整	zeng2	1	ruianese.character_01.dict.yaml:203	already valid	zeng2	ok
+噩	ngoe7	1	ruianese.character_01.dict.yaml:204	ngoo7->ngoe7	ngoo7	converted
+臻	zang1	1	ruianese.character_01.dict.yaml:205	already valid	zang1	ok
+鬴	fu2	1	ruianese.character_01.dict.yaml:206	fvu2->fu2	fvu2	converted
+釜	fu2	1	ruianese.character_01.dict.yaml:207	fvu2->fu2	fvu2	converted
+釐	lei5	1	ruianese.character_01.dict.yaml:208	already valid	lei5	ok
+醫	i1	1	ruianese.character_01.dict.yaml:209	ii1->i1	ii1	converted
+囊	noe5	1	ruianese.character_01.dict.yaml:210	noo5->noe5	noo5	converted
+也	ia2	1	ruianese.character_01.dict.yaml:213	already valid	ia2	ok
+中	zong1	1	ruianese.character_01.dict.yaml:215	already valid	zong1	ok
+中	zong4	1	ruianese.character_01.dict.yaml:216	already valid	zong4	ok
+中	jiong1	1	ruianese.character_01.dict.yaml:217	already valid	jiong1	ok
+中	jiong4	1	ruianese.character_01.dict.yaml:218	already valid	jiong4	ok
+内	nai8	1	ruianese.character_01.dict.yaml:219	already valid	nai8	ok
+吊	duoe4	1	ruianese.character_01.dict.yaml:220	duoo4->duoe4	duoo4	converted
+弔	duoe4	1	ruianese.character_01.dict.yaml:221	duoo4->duoe4	duoo4	converted
+書	seju1	1	ruianese.character_01.dict.yaml:222	no valid mapping; tried seju1	seju1	unresolved
+卡	ka2	1	ruianese.character_01.dict.yaml:223	already valid	ka2	ok
+卡	ko2	1	ruianese.character_01.dict.yaml:224	already valid	ko2	ok
+北	bei3	1	ruianese.character_01.dict.yaml:225	already valid	bei3	ok
+凸	dde7	1	ruianese.character_01.dict.yaml:226	ddeu7->dde7	ddeu7	converted
+舊	jjiao8	1	ruianese.character_01.dict.yaml:227	already valid	jjiao8	ok
+舊	jjiao5	1	ruianese.character_01.dict.yaml:228	already valid	jjiao5	ok
+歸	jyu1	1	ruianese.character_01.dict.yaml:229	already valid	jyu1	ok
+歸	gai1	1	ruianese.character_01.dict.yaml:230	already valid	gai1	ok
+甲	go3	1	ruianese.character_01.dict.yaml:231	already valid	go3	ok
+申	sang1	1	ruianese.character_01.dict.yaml:232	already valid	sang1	ok
+電	ddie8	1	ruianese.character_01.dict.yaml:233	already valid	ddie8	ok
+由	xiao5	1	ruianese.character_01.dict.yaml:234	xyiao5->xiao5	xyiao5	converted
+冉	xie6	1	ruianese.character_01.dict.yaml:235	xyie6->xie6	xyie6	converted
+冉	zzie6	1	ruianese.character_01.dict.yaml:236	already valid	zzie6	ok
+央	iae1	1	ruianese.character_01.dict.yaml:237	already valid	iae1	ok
+史	si2	1	ruianese.character_01.dict.yaml:238	already valid	si2	ok
+半	be4	1	ruianese.character_01.dict.yaml:239	beu4->be4	beu4	converted
+凹	o1	1	ruianese.character_01.dict.yaml:240	already valid	o1	ok
+出	cjueu3	1	ruianese.character_01.dict.yaml:241	no valid mapping; tried cjueu3, cjue3	cjueu3	unresolved
+出	qyue3	1	ruianese.character_01.dict.yaml:242	qjueu3->qyue3	qjueu3	converted
+齣	cjueu3	1	ruianese.character_01.dict.yaml:243	no valid mapping; tried cjueu3, cjue3	cjueu3	unresolved
+齣	qyue3	1	ruianese.character_01.dict.yaml:244	qjueu3->qyue3	qjueu3	converted
+師	si1	1	ruianese.character_01.dict.yaml:246	already valid	si1	ok
+抴	xi7	1	ruianese.character_01.dict.yaml:247	xyii7->xi7	xyii7	converted
+曳	xi8	1	ruianese.character_01.dict.yaml:248	xyii8->xi8	xyii8	converted
+曲	qiou8	1	ruianese.character_01.dict.yaml:249	already valid	qiou8	ok
+曲	qjuo8	1	ruianese.character_01.dict.yaml:250	no valid mapping; tried qjuo8	qjuo8	unresolved
+麯	qiou8	1	ruianese.character_01.dict.yaml:251	already valid	qiou8	ok
+麴	qiou8	1	ruianese.character_01.dict.yaml:252	already valid	qiou8	ok
+肉	nyou7	1	ruianese.character_01.dict.yaml:253	no valid mapping; tried nyou7, njou7	nyou7	unresolved
+羋	mei6	1	ruianese.character_01.dict.yaml:254	already valid	mei6	ok
+縣	xie7	1	ruianese.character_01.dict.yaml:255	xyie7->xie7	xyie7	converted
+縣	xyue7	1	ruianese.character_01.dict.yaml:256	xyjue7->xyue7	xyjue7	converted
+串	qyue4	1	ruianese.character_01.dict.yaml:257	qjue4->qyue4	qjue4	converted
+串	cong4	1	ruianese.character_01.dict.yaml:258	already valid	cong4	ok
+非	fei1	1	ruianese.character_01.dict.yaml:259	already valid	fei1	ok
+果	gvu2	1	ruianese.character_01.dict.yaml:260	no valid mapping; tried gvu2	gvu2	unresolved
+菓	gvu2	1	ruianese.character_01.dict.yaml:261	no valid mapping; tried gvu2	gvu2	unresolved
+暢	ciae4	1	ruianese.character_01.dict.yaml:262	no valid mapping; tried ciae4	ciae4	unresolved
+暢	qiae4	1	ruianese.character_01.dict.yaml:263	already valid	qiae4	ok
+肅	sou3	1	ruianese.character_01.dict.yaml:264	already valid	sou3	ok
+臨	leng5	1	ruianese.character_01.dict.yaml:266	already valid	leng5	ok
+將	ziae1	1	ruianese.character_01.dict.yaml:267	no valid mapping; tried ziae1	ziae1	unresolved
+將	jiae1	1	ruianese.character_01.dict.yaml:268	already valid	jiae1	ok
+將	ziae4	1	ruianese.character_01.dict.yaml:269	no valid mapping; tried ziae4	ziae4	unresolved
+將	jiae4	1	ruianese.character_01.dict.yaml:270	already valid	jiae4	ok
+禺	njyu5	1	ruianese.character_01.dict.yaml:271	nyju5->njyu5	nyju5	converted
+幽	iao1	1	ruianese.character_01.dict.yaml:272	already valid	iao1	ok
+畢	bei3	1	ruianese.character_01.dict.yaml:273	already valid	bei3	ok
+鼎	deng2	1	ruianese.character_01.dict.yaml:274	already valid	deng2	ok
+嘦	jyue4	1	ruianese.character_01.dict.yaml:275	already valid	jyue4	ok
+冀	ji4	1	ruianese.character_01.dict.yaml:276	jii4->ji4	jii4	converted
+豳	beng1	1	ruianese.character_01.dict.yaml:277	already valid	beng1	ok
+入	zza7	1	ruianese.character_01.dict.yaml:280	already valid	zza7	ok
+乂	nji8	1	ruianese.character_01.dict.yaml:281	nyii8->nji8	nyii8	converted
+九	jiao2	1	ruianese.character_01.dict.yaml:282	already valid	jiao2	ok
+匕	bei2	1	ruianese.character_01.dict.yaml:283	already valid	bei2	ok
+乃	na6	1	ruianese.character_01.dict.yaml:284	already valid	na6	ok
+迺	na6	1	ruianese.character_01.dict.yaml:285	already valid	na6	ok
+廼	na6	1	ruianese.character_01.dict.yaml:286	already valid	na6	ok
+千	qie1	1	ruianese.character_01.dict.yaml:287	already valid	qie1	ok
+韆	qie1	1	ruianese.character_01.dict.yaml:288	already valid	qie1	ok
+乞	qi3	1	ruianese.character_01.dict.yaml:289	qii3->qi3	qii3	converted
+川	qju1	1	ruianese.character_01.dict.yaml:290	no valid mapping; tried qju1	qju1	unresolved
+凡	vo5	1	ruianese.character_01.dict.yaml:291	already valid	vo5	ok
+凢	vo5	1	ruianese.character_01.dict.yaml:292	already valid	vo5	ok
+凣	vo5	1	ruianese.character_01.dict.yaml:293	already valid	vo5	ok
+義	nji8	1	ruianese.character_01.dict.yaml:294	nyii8->nji8	nyii8	converted
+麽	mo5	1	ruianese.character_01.dict.yaml:295	already valid	mo5	ok
+麼	mo5	1	ruianese.character_01.dict.yaml:296	already valid	mo5	ok
+庅	mo5	1	ruianese.character_01.dict.yaml:297	already valid	mo5	ok
+久	jiao2	1	ruianese.character_01.dict.yaml:298	already valid	jiao2	ok
+丸	xyu5	1	ruianese.character_01.dict.yaml:299	xyju5->xyu5	xyju5	converted
+及	jjia7	1	ruianese.character_01.dict.yaml:300	already valid	jjia7	ok
+午	ngvu6	1	ruianese.character_01.dict.yaml:302	no valid mapping; tried ngvu6	ngvu6	unresolved
+壬	nyang5	1	ruianese.character_01.dict.yaml:303	no valid mapping; tried nyang5, njang5	nyang5	unresolved
+升	seng1	1	ruianese.character_01.dict.yaml:304	already valid	seng1	ok
+昇	seng1	1	ruianese.character_01.dict.yaml:305	already valid	seng1	ok
+陞	seng1	1	ruianese.character_01.dict.yaml:306	already valid	seng1	ok
+夭	yeu1	1	ruianese.character_01.dict.yaml:307	no valid mapping; tried yeu1, ye1; 夭夭	yeu1	unresolved
+夭	yeu2	1	ruianese.character_01.dict.yaml:308	no valid mapping; tried yeu2, ye2	yeu2	unresolved
+殀	yeu2	1	ruianese.character_01.dict.yaml:309	no valid mapping; tried yeu2, ye2; 殀折	yeu2	unresolved
+幣	bbei8	1	ruianese.character_01.dict.yaml:310	already valid	bbei8	ok
+反	fo2	1	ruianese.character_01.dict.yaml:311	already valid	fo2	ok
+爻	hho5	1	ruianese.character_01.dict.yaml:312	already valid	hho5	ok
+乏	vo7	1	ruianese.character_01.dict.yaml:313	already valid	vo7	ok
+氏	zzi5	1	ruianese.character_01.dict.yaml:314	already valid; 氏族	zzi5	ok
+氏	zei1	1	ruianese.character_01.dict.yaml:315	already valid; 月氏	zei1	ok
+丹	do1	1	ruianese.character_01.dict.yaml:316	already valid	do1	ok
+烏	vu1	1	ruianese.character_01.dict.yaml:317	already valid	vu1	ok
+生	sa3	1	ruianese.character_01.dict.yaml:319	already valid	sa3	ok
+玍	ga2	1	ruianese.character_01.dict.yaml:320	already valid	ga2	ok
+失	sa3	1	ruianese.character_01.dict.yaml:321	already valid	sa3	ok
+乍	zzo8	1	ruianese.character_01.dict.yaml:322	already valid	zzo8	ok
+丘	qiao1	1	ruianese.character_01.dict.yaml:323	already valid	qiao1	ok
+坵	qiao1	1	ruianese.character_01.dict.yaml:324	already valid	qiao1	ok
+卮	zei1	1	ruianese.character_01.dict.yaml:325	already valid	zei1	ok
+巵	zei1	1	ruianese.character_01.dict.yaml:326	already valid	zei1	ok
+乎	vu5	1	ruianese.character_01.dict.yaml:327	vvu5->vu5	vvu5	converted
+用	xyjuo8	1	ruianese.character_01.dict.yaml:328	no valid mapping; tried xyjuo8, xjuo8	xyjuo8	unresolved
+甩	xia3	1	ruianese.character_01.dict.yaml:329	already valid	xia3	ok
+氐	dei2	1	ruianese.character_01.dict.yaml:330	already valid	dei2	ok
+氐	dei1	1	ruianese.character_01.dict.yaml:331	already valid	dei1	ok
+樂	loe7	1	ruianese.character_01.dict.yaml:332	loo7->loe7; 與普通話不同，音樂的樂也是loo7	loo7	converted
+樂	ngoe7	1	ruianese.character_01.dict.yaml:333	ngoo7->ngoe7; 樂清	ngoo7	converted
+処	ceju2	1	ruianese.character_01.dict.yaml:334	no valid mapping; tried ceju2	ceju2	unresolved
+處	ceju2	1	ruianese.character_01.dict.yaml:335	no valid mapping; tried ceju2	ceju2	unresolved
+䖏	ceju2	1	ruianese.character_01.dict.yaml:336	no valid mapping; tried ceju2	ceju2	unresolved
+処	ceju4	1	ruianese.character_01.dict.yaml:337	no valid mapping; tried ceju4	ceju4	unresolved
+處	ceju4	1	ruianese.character_01.dict.yaml:338	no valid mapping; tried ceju4	ceju4	unresolved
+䖏	ceju4	1	ruianese.character_01.dict.yaml:339	no valid mapping; tried ceju4	ceju4	unresolved
+冬	ddong5	1	ruianese.character_01.dict.yaml:340	already valid	ddong5	ok
+鼕	ddong5	1	ruianese.character_01.dict.yaml:341	already valid	ddong5	ok
+務	vju8	1	ruianese.character_01.dict.yaml:342	no valid mapping; tried vju8	vju8	unresolved
+年	njie5	1	ruianese.character_01.dict.yaml:344	nyie5->njie5	nyie5	converted
+秊	njie5	1	ruianese.character_01.dict.yaml:345	nyie5->njie5	nyie5	converted
+硃	zeju1	1	ruianese.character_01.dict.yaml:346	no valid mapping; tried zeju1	zeju1	unresolved
+朱	zeju1	1	ruianese.character_01.dict.yaml:347	no valid mapping; tried zeju1	zeju1	unresolved
+丟	dou1	1	ruianese.character_01.dict.yaml:348	already valid	dou1	ok
+喬	jjyu5	1	ruianese.character_01.dict.yaml:349	already valid	jjyu5	ok
+乒	peng1	1	ruianese.character_01.dict.yaml:350	already valid	peng1	ok
+乓	pong1	1	ruianese.character_01.dict.yaml:351	already valid	pong1	ok
+甪	lou7	1	ruianese.character_01.dict.yaml:352	already valid	lou7	ok
+向	xiae4	1	ruianese.character_01.dict.yaml:353	already valid	xiae4	ok
+嚮	xiae4	1	ruianese.character_01.dict.yaml:354	already valid	xiae4	ok
+曏	xiae4	1	ruianese.character_01.dict.yaml:355	already valid	xiae4	ok
+囟	sang4	1	ruianese.character_01.dict.yaml:356	already valid	sang4	ok
+顖	sang4	1	ruianese.character_01.dict.yaml:357	already valid	sang4	ok
+後	hhao6	1	ruianese.character_01.dict.yaml:358	already valid	hhao6	ok
+后	hhao6	1	ruianese.character_01.dict.yaml:359	already valid	hhao6	ok
+殺	so3	1	ruianese.character_01.dict.yaml:360	already valid	so3	ok
+兆	jyu6	1	ruianese.character_01.dict.yaml:361	already valid	jyu6	ok
+汆	ce1	1	ruianese.character_01.dict.yaml:362	ceu1->ce1	ceu1	converted
+危	njyu5	1	ruianese.character_01.dict.yaml:363	nyju5->njyu5	nyju5	converted
+各	goe3	1	ruianese.character_01.dict.yaml:364	goo3->goe3; 各種	goo3	converted
+各	goe2	1	ruianese.character_01.dict.yaml:365	goo2->goe2; 各自	goo2	converted
+色	sei3	1	ruianese.character_01.dict.yaml:366	already valid	sei3	ok
+我	ngvu5	1	ruianese.character_01.dict.yaml:368	no valid mapping; tried ngvu5	ngvu5	unresolved
+每	mei6	1	ruianese.character_01.dict.yaml:369	already valid	mei6	ok
+兵	beng1	1	ruianese.character_01.dict.yaml:370	already valid	beng1	ok
+兔	teju4	1	ruianese.character_01.dict.yaml:371	no valid mapping; tried teju4	teju4	unresolved
+囱	cong1	1	ruianese.character_01.dict.yaml:372	already valid	cong1	ok
+希	xi1	1	ruianese.character_01.dict.yaml:373	xii1->xi1	xii1	converted
+龜	ju1	1	ruianese.character_01.dict.yaml:374	no valid mapping; tried ju1	ju1	unresolved
+龜	jiang1	1	ruianese.character_01.dict.yaml:375	already valid	jiang1	ok
+龜	jiao1	1	ruianese.character_01.dict.yaml:376	already valid	jiao1	ok
+卵	lang6	1	ruianese.character_01.dict.yaml:377	already valid	lang6	ok
+係	ji4	1	ruianese.character_01.dict.yaml:378	jii4->ji4	jii4	converted
+繫	xi8	1	ruianese.character_01.dict.yaml:379	xyii8->xi8	xyii8	converted
+系	xi8	1	ruianese.character_01.dict.yaml:380	xyii8->xi8	xyii8	converted
+垂	zjeu5	1	ruianese.character_01.dict.yaml:382	no valid mapping; tried zjeu5, zje5	zjeu5	unresolved
+乖	ga1	1	ruianese.character_01.dict.yaml:383	already valid	ga1	ok
+秉	bong2	1	ruianese.character_01.dict.yaml:384	already valid	bong2	ok
+臾	vju5	1	ruianese.character_01.dict.yaml:385	no valid mapping; tried vju5	vju5	unresolved
+卑	bai1	1	ruianese.character_01.dict.yaml:386	already valid	bai1	ok
+阜	vau6	1	ruianese.character_01.dict.yaml:387	no valid mapping; tried vau6	vau6	unresolved
+質	za3	1	ruianese.character_01.dict.yaml:388	already valid	za3	ok
+肴	hho5	1	ruianese.character_01.dict.yaml:389	already valid	hho5	ok
+餚	hho5	1	ruianese.character_01.dict.yaml:390	already valid	hho5	ok

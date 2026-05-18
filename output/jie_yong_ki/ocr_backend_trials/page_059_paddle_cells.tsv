@@ -1,0 +1,231 @@
+page	row	column	column_name	text	confidence	bbox	status	note	backend
+059	1	1	radical_strokes	部首 笔画	99.94	337,363,229,377	ok		paddleocr
+059	1	2	hanzi	汉字	99.78	566,363,303,377	ok		paddleocr
+059	1	3	pinyin	拼音	99.99	869,363,263,377	suspicious	pinyin_contains_hanzi	paddleocr
+059	1	4	fanqie	反切	99.98	1132,363,227,377	ok		paddleocr
+059	1	5	tone	调	99.95	1359,363,137,377	ok		paddleocr
+059	1	6	rhyme	韵	98.76	1496,363,138,377	ok		paddleocr
+059	1	7	initial	电	19.14	1634,363,136,377	review	low_confidence	paddleocr
+059	1	8	ipa	瑞安 国际 音标	99.93	1770,363,226,377	ok		paddleocr
+059	1	9	homophone	方音 同音 字	97.86	1996,363,225,377	ok		paddleocr
+059	1	10	note	备注	99.98	2221,363,574,377	ok		paddleocr
+059	2	1	radical_strokes		0.00	337,740,229,141	review	blank	paddleocr
+059	2	2	hanzi	万	99.87	566,740,303,141	ok		paddleocr
+059	2	3	pinyin	mò	99.73	869,740,263,141	ok		paddleocr
+059	2	4	fanqie	莫北	99.93	1132,740,227,141	ok		paddleocr
+059	2	5	tone	人	53.21	1359,740,137,141	ok		paddleocr
+059	2	6	rhyme	德	99.94	1496,740,138,141	ok		paddleocr
+059	2	7	initial	明	99.87	1634,740,136,141	ok		paddleocr
+059	2	8	ipa	mε 0	53.75	1770,740,226,141	ok		paddleocr
+059	2	9	homophone	需	96.13	1996,740,225,141	ok		paddleocr
+059	2	10	note	万俟（复姓）	84.38	2221,740,574,141	ok		paddleocr
+059	3	1	radical_strokes		0.00	337,881,229,144	review	blank	paddleocr
+059	3	2	hanzi	万（萬）	85.76	566,881,303,144	ok		paddleocr
+059	3	3	pinyin	upm	71.18	869,881,263,144	ok		paddleocr
+059	3	4	fanqie	無販	99.79	1132,881,227,144	ok		paddleocr
+059	3	5	tone	去	99.99	1359,881,137,144	ok		paddleocr
+059	3	6	rhyme	願	98.92	1496,881,138,144	ok		paddleocr
+059	3	7	initial	明	99.75	1634,881,136,144	ok		paddleocr
+059	3	8	ipa	CA 1	47.78	1770,881,226,144	ok		paddleocr
+059	3	9	homophone	饭 *	98.18	1996,881,225,144	ok		paddleocr
+059	3	10	note		0.00	2221,881,574,144	review	blank	paddleocr
+059	4	1	radical_strokes	三画	99.87	337,1025,229,143	ok		paddleocr
+059	4	2	hanzi	丰	99.86	566,1025,303,143	ok		paddleocr
+059	4	3	pinyin	uee	23.45	869,1025,263,143	review	low_confidence	paddleocr
+059	4	4	fanqie	敷容	99.74	1132,1025,227,143	ok		paddleocr
+059	4	5	tone	平	99.95	1359,1025,137,143	ok		paddleocr
+059	4	6	rhyme	鍾	99.88	1496,1025,138,143	ok		paddleocr
+059	4	7	initial	滂	96.56	1634,1025,136,143	ok		paddleocr
+059	4	8	ipa	Cnj	46.18	1770,1025,226,143	ok		paddleocr
+059	4	9	homophone	烽	91.65	1996,1025,225,143	ok		paddleocr
+059	4	10	note		0.00	2221,1025,574,143	review	blank	paddleocr
+059	5	1	radical_strokes		0.00	337,1168,229,141	review	blank	paddleocr
+059	5	2	hanzi	丰（豐）	80.42	566,1168,303,141	ok		paddleocr
+059	5	3	pinyin	ee	20.58	869,1168,263,141	review	low_confidence	paddleocr
+059	5	4	fanqie	敷空	99.72	1132,1168,227,141	ok		paddleocr
+059	5	5	tone	平	99.94	1359,1168,137,141	ok		paddleocr
+059	5	6	rhyme	東	99.65	1496,1168,138,141	ok		paddleocr
+059	5	7	initial	滂	96.63	1634,1168,136,141	ok		paddleocr
+059	5	8	ipa	Cmj	41.50	1770,1168,226,141	review	low_confidence	paddleocr
+059	5	9	homophone	风 *	96.19	1996,1168,225,141	ok		paddleocr
+059	5	10	note		0.00	2221,1168,574,141	review	blank	paddleocr
+059	6	1	radical_strokes		0.00	337,1309,229,142	review	blank	paddleocr
+059	6	2	hanzi	井	99.80	566,1309,303,142	ok		paddleocr
+059	6	3	pinyin	jǐng	99.51	869,1309,263,142	ok		paddleocr
+059	6	4	fanqie	子郢	99.90	1132,1309,227,142	ok		paddleocr
+059	6	5	tone	上	99.81	1359,1309,137,142	ok		paddleocr
+059	6	6	rhyme	静	99.59	1496,1309,138,142	ok		paddleocr
+059	6	7	initial	精	99.96	1634,1309,136,142	ok		paddleocr
+059	6	8	ipa	esen	29.43	1770,1309,226,142	review	low_confidence	paddleocr
+059	6	9	homophone	整 *	98.83	1996,1309,225,142	ok		paddleocr
+059	6	10	note		0.00	2221,1309,574,142	review	blank	paddleocr
+059	7	1	radical_strokes		0.00	337,1451,229,142	review	blank	paddleocr
+059	7	2	hanzi	开（開	87.93	566,1451,303,142	ok		paddleocr
+059	7	3	pinyin	kāi	94.44	869,1451,263,142	ok		paddleocr
+059	7	4	fanqie	苦哀	99.84	1132,1451,227,142	ok		paddleocr
+059	7	5	tone	平	99.98	1359,1451,137,142	ok		paddleocr
+059	7	6	rhyme	怡	27.61	1496,1451,138,142	review	low_confidence	paddleocr
+059	7	7	initial	溪	99.86	1634,1451,136,142	ok		paddleocr
+059	7	8	ipa	ckhε	90.46	1770,1451,226,142	ok		paddleocr
+059	7	9	homophone	堪 *	99.09	1996,1451,225,142	ok		paddleocr
+059	7	10	note		0.00	2221,1451,574,142	review	blank	paddleocr
+059	8	1	radical_strokes		0.00	337,1593,229,142	review	blank	paddleocr
+059	8	2	hanzi	夫	99.88	566,1593,303,142	ok		paddleocr
+059	8	3	pinyin	n	35.03	869,1593,263,142	review	low_confidence	paddleocr
+059	8	4	fanqie	甫無	99.92	1132,1593,227,142	ok		paddleocr
+059	8	5	tone	平	99.97	1359,1593,137,142	ok		paddleocr
+059	8	6	rhyme	虞	99.89	1496,1593,138,142	ok		paddleocr
+059	8	7	initial	非	99.87	1634,1593,136,142	ok		paddleocr
+059	8	8	ipa	cfw	86.65	1770,1593,226,142	ok		paddleocr
+059	8	9	homophone	呼 *	98.13	1996,1593,225,142	ok		paddleocr
+059	8	10	note	夫	97.41	2221,1593,574,142	ok		paddleocr
+059	9	1	radical_strokes		0.00	337,1735,229,144	review	blank	paddleocr
+059	9	2	hanzi		0.00	566,1735,303,144	review	blank	paddleocr
+059	9	3	pinyin	n	34.07	869,1735,263,144	review	low_confidence	paddleocr
+059	9	4	fanqie	防無	99.87	1132,1735,227,144	ok		paddleocr
+059	9	5	tone	平	99.96	1359,1735,137,144	ok		paddleocr
+059	9	6	rhyme	虞	99.90	1496,1735,138,144	ok		paddleocr
+059	9	7	initial	奉	99.86	1634,1735,136,144	ok		paddleocr
+059	9	8	ipa	MAJ	66.04	1770,1735,226,144	ok		paddleocr
+059	9	9	homophone	河 *	96.65	1996,1735,225,144	ok		paddleocr
+059	9	10	note	发语词	82.59	2221,1735,574,144	ok		paddleocr
+059	10	1	radical_strokes		0.00	337,1879,229,141	review	blank	paddleocr
+059	10	2	hanzi	天	99.93	566,1879,303,141	ok		paddleocr
+059	10	3	pinyin	upi	44.88	869,1879,263,141	review	low_confidence	paddleocr
+059	10	4	fanqie	他前	99.87	1132,1879,227,141	ok		paddleocr
+059	10	5	tone	平	99.97	1359,1879,137,141	ok		paddleocr
+059	10	6	rhyme	先	99.99	1496,1879,138,141	ok		paddleocr
+059	10	7	initial	透	99.96	1634,1879,136,141	ok		paddleocr
+059	10	8	ipa	cthie	98.11	1770,1879,226,141	ok		paddleocr
+059	10	9	homophone	铁 平	99.88	1996,1879,225,141	ok		paddleocr
+059	10	10	note		0.00	2221,1879,574,141	review	blank	paddleocr
+059	11	1	radical_strokes		0.00	337,2020,229,142	review	blank	paddleocr
+059	11	2	hanzi	元	99.97	566,2020,303,142	ok		paddleocr
+059	11	3	pinyin	upnk	79.99	869,2020,263,142	ok		paddleocr
+059	11	4	fanqie	愚袁	99.96	1132,2020,227,142	ok		paddleocr
+059	11	5	tone	平	99.97	1359,2020,137,142	ok		paddleocr
+059	11	6	rhyme	元	99.97	1496,2020,138,142	ok		paddleocr
+059	11	7	initial	疑	99.96	1634,2020,136,142	ok		paddleocr
+059	11	8	ipa	e\q$	46.13	1770,2020,226,142	ok		paddleocr
+059	11	9	homophone	原	99.95	1996,2020,225,142	ok		paddleocr
+059	11	10	note		0.00	2221,2020,574,142	review	blank	paddleocr
+059	12	1	radical_strokes		0.00	337,2162,229,144	review	blank	paddleocr
+059	12	2	hanzi	无（無）	74.11	566,2162,303,144	ok		paddleocr
+059	12	3	pinyin	nm	84.20	869,2162,263,144	ok		paddleocr
+059	12	4	fanqie	武夫	99.96	1132,2162,227,144	ok		paddleocr
+059	12	5	tone	平	99.97	1359,2162,137,144	ok		paddleocr
+059	12	6	rhyme	虞	99.87	1496,2162,138,144	ok		paddleocr
+059	12	7	initial	自	22.56	1634,2162,136,144	review	low_confidence	paddleocr
+059	12	8	ipa	MA5	65.96	1770,2162,226,144	ok		paddleocr
+059	12	9	homophone	河 *	96.89	1996,2162,225,144	ok		paddleocr
+059	12	10	note		0.00	2221,2162,574,144	review	blank	paddleocr
+059	13	1	radical_strokes		0.00	337,2306,229,263	review	blank	paddleocr
+059	13	2	hanzi		0.00	566,2306,303,263	review	blank	paddleocr
+059	13	3	pinyin	mó	99.20	869,2306,263,263	ok		paddleocr
+059	13	4	fanqie		0.00	1132,2306,227,263	review	blank	paddleocr
+059	13	5	tone		0.00	1359,2306,137,263	review	blank	paddleocr
+059	13	6	rhyme		0.00	1496,2306,138,263	review	blank	paddleocr
+059	13	7	initial		0.00	1634,2306,136,263	review	blank	paddleocr
+059	13	8	ipa	mo	95.48	1770,2306,226,263	ok		paddleocr
+059	13	9	homophone	忙 *	96.84	1996,2306,225,263	ok		paddleocr
+059	13	10	note	南無（梵语音 namo)	92.15	2221,2306,574,263	ok		paddleocr
+059	14	1	radical_strokes		0.00	337,2569,229,150	review	blank	paddleocr
+059	14	2	hanzi	韦（韋）	79.06	566,2569,303,150	ok		paddleocr
+059	14	3	pinyin	em	20.16	869,2569,263,150	review	low_confidence	paddleocr
+059	14	4	fanqie	雨非	99.58	1132,2569,227,150	ok		paddleocr
+059	14	5	tone	平	99.93	1359,2569,137,150	ok		paddleocr
+059	14	6	rhyme	微	99.70	1496,2569,138,150	ok		paddleocr
+059	14	7	initial	于	99.59	1634,2569,136,150	ok		paddleocr
+059	14	8	ipa	AA5	55.55	1770,2569,226,150	ok		paddleocr
+059	14	9	homophone	围	99.81	1996,2569,225,150	ok		paddleocr
+059	14	10	note		0.00	2221,2569,574,150	review	blank	paddleocr
+059	15	1	radical_strokes		0.00	337,2719,229,263	review	blank	paddleocr
+059	15	2	hanzi	专（專、 耑） *	72.09	566,2719,303,263	ok		paddleocr
+059	15	3	pinyin	zhuān	99.60	869,2719,263,263	ok		paddleocr
+059	15	4	fanqie	職緣	99.47	1132,2719,227,263	ok		paddleocr
+059	15	5	tone	平	99.97	1359,2719,137,263	ok		paddleocr
+059	15	6	rhyme	仙	99.96	1496,2719,138,263	ok		paddleocr
+059	15	7	initial	照	99.98	1634,2719,136,263	ok		paddleocr
+059	15	8	ipa	ctsya	78.53	1770,2719,226,263	ok		paddleocr
+059	15	9	homophone	昭 *	97.76	1996,2719,225,263	ok		paddleocr
+059	15	10	note	teya(骄)	78.01	2221,2719,574,263	ok		paddleocr
+059	16	1	radical_strokes		0.00	337,2982,229,159	review	blank	paddleocr
+059	16	2	hanzi	丐	98.37	566,2982,303,159	ok		paddleocr
+059	16	3	pinyin	106	82.28	869,2982,263,159	ok		paddleocr
+059	16	4	fanqie	居曷	98.66	1132,2982,227,159	ok		paddleocr
+059	16	5	tone		0.00	1359,2982,137,159	review	blank	paddleocr
+059	16	6	rhyme		0.00	1496,2982,138,159	review	blank	paddleocr
+059	16	7	initial		0.00	1634,2982,136,159	review	blank	paddleocr
+059	16	8	ipa	ka	43.95	1770,2982,226,159	review	low_confidence	paddleocr
+059	16	9	homophone		0.00	1996,2982,225,159	review	blank	paddleocr
+059	16	10	note	俗音khə（渴）	87.14	2221,2982,574,159	ok		paddleocr
+059	17	1	radical_strokes		0.00	337,3141,229,159	review	blank	paddleocr
+059	17	2	hanzi	廿	91.31	566,3141,303,159	ok		paddleocr
+059	17	3	pinyin	upiu	83.51	869,3141,263,159	ok		paddleocr
+059	17	4	fanqie	人執	99.98	1132,3141,227,159	ok		paddleocr
+059	17	5	tone	人	71.45	1359,3141,137,159	ok		paddleocr
+059	17	6	rhyme	緝	99.81	1496,3141,138,159	ok		paddleocr
+059	17	7	initial	日	98.07	1634,3141,136,159	ok		paddleocr
+059	17	8	ipa	$za2}$	69.66	1770,3141,226,159	ok		paddleocr
+059	17	9	homophone	十 *	98.64	1996,3141,225,159	ok		paddleocr
+059	17	10	note	俗音nie²（念）	78.19	2221,3141,574,159	ok		paddleocr
+059	18	1	radical_strokes		0.00	337,3300,229,159	review	blank	paddleocr
+059	18	2	hanzi	五	99.99	566,3300,303,159	ok		paddleocr
+059	18	3	pinyin	wǔ	99.75	869,3300,263,159	ok		paddleocr
+059	18	4	fanqie	疑古	99.84	1132,3300,227,159	ok		paddleocr
+059	18	5	tone	上	99.99	1359,3300,137,159	ok		paddleocr
+059	18	6	rhyme	2	8.63	1496,3300,138,159	review	low_confidence	paddleocr
+059	18	7	initial	疑	99.95	1634,3300,136,159	ok		paddleocr
+059	18	8	ipa	MG 5	79.13	1770,3300,226,159	ok		paddleocr
+059	18	9	homophone	午	99.82	1996,3300,225,159	ok		paddleocr
+059	18	10	note		0.00	2221,3300,574,159	review	blank	paddleocr
+059	19	1	radical_strokes		0.00	337,3459,229,158	review	blank	paddleocr
+059	19	2	hanzi	匝（币）	77.68	566,3459,303,158	ok		paddleocr
+059	19	3	pinyin	zā	99.81	869,3459,263,158	ok		paddleocr
+059	19	4	fanqie	子答	99.98	1132,3459,227,158	ok		paddleocr
+059	19	5	tone	人	78.74	1359,3459,137,158	ok		paddleocr
+059	19	6	rhyme	合	99.96	1496,3459,138,158	ok		paddleocr
+059	19	7	initial	精	99.95	1634,3459,136,158	ok		paddleocr
+059	19	8	ipa	tsε)	70.43	1770,3459,226,158	ok		paddleocr
+059	19	9	homophone	则 *	98.02	1996,3459,225,158	ok		paddleocr
+059	19	10	note	俗音tso（扎）	82.32	2221,3459,574,158	ok		paddleocr
+059	20	1	radical_strokes		0.00	337,3617,229,159	review	blank	paddleocr
+059	20	2	hanzi	丐	74.77	566,3617,303,159	ok		paddleocr
+059	20	3	pinyin	upiw	65.07	869,3617,263,159	ok		paddleocr
+059	20	4	fanqie	彌兗	73.24	1132,3617,227,159	ok		paddleocr
+059	20	5	tone		0.00	1359,3617,137,159	review	blank	paddleocr
+059	20	6	rhyme		0.00	1496,3617,138,159	review	blank	paddleocr
+059	20	7	initial		0.00	1634,3617,136,159	review	blank	paddleocr
+059	20	8	ipa	J mie	68.85	1770,3617,226,159	ok		paddleocr
+059	20	9	homophone	免 *	98.21	1996,3617,225,159	ok		paddleocr
+059	20	10	note		0.00	2221,3617,574,159	review	blank	paddleocr
+059	21	1	radical_strokes		0.00	337,3776,229,159	review	blank	paddleocr
+059	21	2	hanzi	卅	67.05	566,3776,303,159	ok		paddleocr
+059	21	3	pinyin	sà	99.92	869,3776,263,159	ok		paddleocr
+059	21	4	fanqie	蘇合	99.60	1132,3776,227,159	ok		paddleocr
+059	21	5	tone	人	80.22	1359,3776,137,159	ok		paddleocr
+059	21	6	rhyme	合	99.97	1496,3776,138,159	ok		paddleocr
+059	21	7	initial	心	99.98	1634,3776,136,159	ok		paddleocr
+059	21	8	ipa	cCs	53.28	1770,3776,226,159	ok		paddleocr
+059	21	9	homophone	杀 *	97.28	1996,3776,225,159	ok		paddleocr
+059	21	10	note		0.00	2221,3776,574,159	review	blank	paddleocr
+059	22	1	radical_strokes		0.00	337,3935,229,159	review	blank	paddleocr
+059	22	2	hanzi		0.00	566,3935,303,159	review	blank	paddleocr
+059	22	3	pinyin		0.00	869,3935,263,159	review	blank	paddleocr
+059	22	4	fanqie	私盍	99.04	1132,3935,227,159	ok		paddleocr
+059	22	5	tone	人	65.23	1359,3935,137,159	ok		paddleocr
+059	22	6	rhyme	盍	91.35	1496,3935,138,159	ok		paddleocr
+059	22	7	initial	心	99.98	1634,3935,136,159	ok		paddleocr
+059	22	8	ipa	cCs	57.80	1770,3935,226,159	ok		paddleocr
+059	22	9	homophone	杀 *	96.16	1996,3935,225,159	ok		paddleocr
+059	22	10	note	俗音l₂（腊）	82.87	2221,3935,574,159	ok		paddleocr
+059	23	1	radical_strokes		0.00	337,4094,229,159	review	blank	paddleocr
+059	23	2	hanzi	不	99.96	566,4094,303,159	ok		paddleocr
+059	23	3	pinyin	D	45.86	869,4094,263,159	ok		paddleocr
+059	23	4	fanqie	分物	99.98	1132,4094,227,159	ok		paddleocr
+059	23	5	tone	人	67.66	1359,4094,137,159	ok		paddleocr
+059	23	6	rhyme	物	99.98	1496,4094,138,159	ok		paddleocr
+059	23	7	initial	幫	91.81	1634,4094,136,159	ok		paddleocr
+059	23	8	ipa	pa,	83.02	1770,4094,226,159	ok		paddleocr
+059	23	9	homophone	伯 *	95.82	1996,4094,225,159	ok		paddleocr
+059	23	10	note		0.00	2221,4094,574,159	review	blank	paddleocr

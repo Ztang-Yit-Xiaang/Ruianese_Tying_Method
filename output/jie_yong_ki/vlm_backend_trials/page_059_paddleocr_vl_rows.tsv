@@ -1,0 +1,23 @@
+page	row	hanzi	pinyin	fanqie	tone_base	tone_register	tone_number	rhyme	initial	ipa	homophone	note	status	review_note
+059	1	万	mò	莫北	入	unknown		德	明	m \epsilon _2	墨	万俟（复姓）	review	tone_register_unresolved,tone_register_unresolved
+059	2	万（萬）	wàn	無販	去	unknown		願	明	v \alpha ^2	饭*		review	tone_register_unresolved,tone_register_unresolved
+059	3	丰	fēng	敷容	平	unknown		鍾	滂	c fuŋ	烽		review	tone_register_unresolved,tone_register_unresolved
+059	4	丰（豐）	fēng	敷空	平	unknown		東	滂	c fuŋ	风*		review	tone_register_unresolved,tone_register_unresolved
+059	5	井	jǐng	子郢	上	unknown		静	精	c ts \alpha n	整*		review	tone_register_unresolved,tone_register_unresolved
+059	6	开（開）	kāi	苦哀	平	unknown		哈	溪	c k \theta \epsilon	堪*		review	tone_register_unresolved,tone_register_unresolved
+059	7	夫	fū	甫無	平	unknown		虞	非	c fw	呼*	农夫	review	tone_register_unresolved,tone_register_unresolved
+059	8		fú	防無	平	unknown		虞	奉	c vw	河*	发语词	review	tone_register_unresolved,missing_hanzi,tone_register_unresolved
+059	9	天	tiān	他前	平	unknown		先	透	c thie	铁平		review	tone_register_unresolved,tone_register_unresolved
+059	10	元	yuán	愚袁	平	unknown		元	疑	c n \theta \epsilon	原		review	tone_register_unresolved,tone_register_unresolved
+059	11	无（無）	wú	武夫	平	unknown		虞	明	c vw	河*		review	tone_register_unresolved,tone_register_unresolved
+059	12		mó			unknown				c mo	忙*	南無（梵语音c na \epsilon mo）	review	tone_register_unresolved,missing_hanzi,tone_register_unresolved
+059	13	韦（韋）	wéi	雨非	平	unknown		微	于	c v \theta	围		review	tone_register_unresolved,tone_register_unresolved
+059	14	专（專、* 耑）	zhuān	職緣	平	unknown		仙	照	c ts \theta \epsilon	昭*	c t \epsilon \theta \epsilon (骄)	review	tone_register_unresolved,tone_register_unresolved
+059	15	丐	gài	居曷		unknown				k \alpha _3		俗音kh \alpha _3（渴）	review	tone_register_unresolved,tone_register_unresolved
+059	16	廿	niàn	人執	入	unknown		緝	日	za _2	十*	俗音niæ^2（念）	review	tone_register_unresolved,tone_register_unresolved
+059	17	五	wǔ	疑古	上	unknown		姥	疑	c \eta w	午		review	tone_register_unresolved,tone_register_unresolved
+059	18	匝（币）	zā	子答	入	unknown		合	精	ts \epsilon _3	则*	俗音ts \epsilon _3（扎）	review	tone_register_unresolved,tone_register_unresolved
+059	19	丐	miǎn	彌兗		unknown				c mie	免*		review	tone_register_unresolved,tone_register_unresolved
+059	20	卅	sà	蘇合	入	unknown		合	心	s \alpha _3	杀*		review	tone_register_unresolved,tone_register_unresolved
+059	21			私盍	入	unknown		盍	心	s \alpha _3	杀*	俗音lo_2（腊）	review	tone_register_unresolved,missing_hanzi,tone_register_unresolved
+059	22	不	bù	分物	入	unknown		物	幫	pa _3	伯*		review	tone_register_unresolved,tone_register_unresolved

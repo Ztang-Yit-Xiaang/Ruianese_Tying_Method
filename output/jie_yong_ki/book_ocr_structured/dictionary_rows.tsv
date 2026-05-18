@@ -1,0 +1,23 @@
+page	row	radical_strokes	hanzi	pinyin	fanqie	tone	rhyme	initial	ipa	homophone	note	avg_confidence	status	issues
+059	2		Fi	mo	莫北，	A	德	By	me)	时	万俊(复姓)	49.44	review	missing_hanzi,radical_strokes:blank,hanzi:missing_hanzi,initial:low_confidence,ipa:low_confidence,homophone:low_confidence
+059	3		万(万)	wan	无县	去	i	a				62.16	review	radical_strokes:blank,fanqie:low_confidence,ipa:blank,homophone:blank,note:blank
+059	4	三画	oe	fang	BA	平	si	ca	cfun	烽		58.96	review	missing_hanzi,hanzi:missing_hanzi,rhyme:low_confidence,initial:low_confidence,note:blank
+059	5		Ca)	feng	ea	平	Ca	ca	fun			46.23	review	missing_hanzi,radical_strokes:blank,hanzi:missing_hanzi,pinyin:low_confidence,fanqie:low_confidence,rhyme:low_confidence,initial:low_confidence,homophone:blank,note:blank
+059	6		je	jing	FR	上	天	精		整:	四	48.25	review	missing_hanzi,radical_strokes:blank,hanzi:low_confidence,missing_hanzi,tone:low_confidence,rhyme:low_confidence,ipa:blank,note:low_confidence
+059	7		FT CBD	kai	ee	平	哈	KR	ckhe	an		50.73	review	missing_hanzi,radical_strokes:blank,hanzi:missing_hanzi,pinyin:low_confidence,fanqie:low_confidence,rhyme:low_confidence,homophone:low_confidence,note:blank
+059	8		Jf	fa	HA	平	K	非	fw	mee	农夫	58.70	review	missing_hanzi,radical_strokes:blank,hanzi:low_confidence,missing_hanzi,homophone:low_confidence
+059	9			fu	Bi Ae	平	ce	r=	vw		发语词	52.48	review	missing_hanzi,radical_strokes:blank,hanzi:blank,fanqie:low_confidence,rhyme:low_confidence,initial:low_confidence,ipa:low_confidence,homophone:blank
+059	10		K	tian	他前	平	先	透	cthie	Ry		76.94	review	missing_hanzi,radical_strokes:blank,hanzi:missing_hanzi,homophone:low_confidence,note:blank
+059	11		元	yuan		平	元		cThyo	原		78.51	review	radical_strokes:blank,fanqie:blank,initial:blank,ipa:low_confidence,note:blank
+059	12		无(无)	wu	武夫	平	广	BY	¢VW	河”		68.94	review	radical_strokes:blank,initial:low_confidence,note:blank
+059	13			mo					co		he ot 语音	57.66	review	missing_hanzi,radical_strokes:blank,hanzi:blank,fanqie:blank,tone:blank,rhyme:blank,initial:blank,ipa:low_confidence,homophone:blank
+059	14		韦(章)	Wei	AE	平	微	于	cVU	转		67.96	review	radical_strokes:blank,fanqie:low_confidence,ipa:low_confidence,note:blank
+059	15	7	ee	zhuan	职缘	#	4		ctSyea	aa	cteya(骄)	44.06	review	missing_hanzi,radical_strokes:low_confidence,hanzi:low_confidence,missing_hanzi,tone:low_confidence,rhyme:low_confidence,initial:blank,ipa:low_confidence,homophone:low_confidence,low_row_confidence
+059	16		ae	gai	届昌				le		俗音 kha, (渴)	46.94	review	missing_hanzi,radical_strokes:blank,hanzi:low_confidence,missing_hanzi,tone:blank,rhyme:blank,initial:blank,ipa:low_confidence,homophone:blank
+059	17	pe	th	nian	dR	A	缉	日	ZQ)	co	俗音 nize’ (念)	64.77	review	missing_hanzi,hanzi:missing_hanzi,homophone:low_confidence
+059	18	国力	五	Wu	a	上	We	E:		午		47.20	review	radical_strokes:low_confidence,initial:low_confidence,ipa:blank,homophone:low_confidence,note:blank
+059	19	po	(i CT)	2a	子竺	入	合	精	tsg)	a	俗音 tso FL)	50.98	review	missing_hanzi,radical_strokes:low_confidence,hanzi:low_confidence,missing_hanzi,pinyin:low_confidence,fanqie:low_confidence,ipa:low_confidence,homophone:low_confidence
+059	20	_	oR	mian	cca	0		0	mie	cs		49.50	review	missing_hanzi,radical_strokes:grid_noise,hanzi:low_confidence,missing_hanzi,fanqie:low_confidence,tone:low_confidence,rhyme:blank,initial:low_confidence,homophone:low_confidence,note:blank
+059	21	p	th	sa	aA	入	合	a	SO»	条，		49.66	review	missing_hanzi,radical_strokes:low_confidence,hanzi:missing_hanzi,fanqie:low_confidence,initial:low_confidence,note:blank
+059	22	p	po		Aba	入	cE	a	SO)	条，	俗音 ja (ID	37.54	review	missing_hanzi,radical_strokes:low_confidence,hanzi:low_confidence,missing_hanzi,pinyin:blank,fanqie:low_confidence,rhyme:low_confidence,initial:low_confidence,low_row_confidence
+059	23	p	不	ba	分物	入	物	Ea	po	St	pe	41.99	review	radical_strokes:low_confidence,pinyin:low_confidence,ipa:low_confidence,homophone:low_confidence,note:low_confidence,low_row_confidence
