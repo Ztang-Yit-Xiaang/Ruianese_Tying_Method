@@ -7,6 +7,7 @@ Py_OCR/__pycache__/
 *.pyc
 *.pyc.*
 output/zhang/
+output/jie_yong_ki/book_ocr/
 output/jie_yong_ki/book_ocr_test/
 output/jie_yong_ki/book_ocr_structured/_tmp_cells/
 output/jie_yong_ki/ocr_backend_trials/_tmp_cells/
