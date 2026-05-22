@@ -16,14 +16,23 @@ import {
 } from "lucide-react";
 import {
   Dialect,
+  DictionaryEntry,
+  DictionarySource,
+  Invitation,
   SpeakerMeta,
   Submission,
   Task,
   TaskType,
+  createInvitations,
+  createTaskFromEntry,
+  fetchDictionaryEntries,
+  fetchDictionarySources,
+  fetchInvitations,
   fetchSubmissions,
   fetchTasks,
   exportManifestUrl,
   submitRecording,
+  updateDictionaryEntry,
   verifyInvitation
 } from "./api";
 
@@ -41,7 +50,156 @@ function formatSeconds(value: number) {
   return `${value.toFixed(1)}s`;
 }
 
+function AdminPanel() {
+  const [token, setToken] = useState(localStorage.getItem("speechCollectorAdminToken") ?? "");
+  const [message, setMessage] = useState("");
+  const [invitations, setInvitations] = useState<Invitation[]>([]);
+  const [sources, setSources] = useState<DictionarySource[]>([]);
+  const [entries, setEntries] = useState<DictionaryEntry[]>([]);
+  const [sourceFilter, setSourceFilter] = useState("");
+  const [statusFilter, setStatusFilter] = useState("pending");
+  const [inviteForm, setInviteForm] = useState({
+    count: 5,
+    dialect_hint: "ruian",
+    label: "",
+    max_uses: 1,
+    expires_at: "",
+    note: ""
+  });
+
+  async function loadAdminData(nextToken = token) {
+    localStorage.setItem("speechCollectorAdminToken", nextToken);
+    const [nextInvites, nextSources, nextEntries] = await Promise.all([
+      fetchInvitations(nextToken),
+      fetchDictionarySources(nextToken),
+      fetchDictionaryEntries(nextToken, statusFilter, sourceFilter)
+    ]);
+    setInvitations(nextInvites);
+    setSources(nextSources);
+    setEntries(nextEntries);
+    setMessage("管理資料已載入。");
+  }
+
+  async function createCodes() {
+    const created = await createInvitations(token, inviteForm);
+    setMessage(`已生成 ${created.length} 個邀請碼：${created.map((item) => item.code).join(" ")}`);
+    await loadAdminData();
+  }
+
+  async function patchEntry(entry: DictionaryEntry, patch: Partial<DictionaryEntry>) {
+    const updated = await updateDictionaryEntry(token, entry.id, patch);
+    setEntries((current) => current.map((item) => (item.id === updated.id ? updated : item)));
+    setMessage(`已更新條目 ${updated.text}`);
+  }
+
+  async function addTask(entry: DictionaryEntry) {
+    const task = await createTaskFromEntry(token, entry.id);
+    setEntries((current) => current.map((item) => (item.id === entry.id ? { ...item, task_id: task.id } : item)));
+    setMessage(`已加入任務：${task.text}`);
+  }
+
+  async function reloadEntries(nextStatus = statusFilter, nextSource = sourceFilter) {
+    setStatusFilter(nextStatus);
+    setSourceFilter(nextSource);
+    const nextEntries = await fetchDictionaryEntries(token, nextStatus, nextSource);
+    setEntries(nextEntries);
+  }
+
+  return (
+    <section className="admin-page">
+      <div className="admin-login">
+        <div>
+          <h2>管理頁</h2>
+          <p>輸入後端環境變數 <code>ADMIN_TOKEN</code>，管理邀請碼與字典審核。</p>
+        </div>
+        <input value={token} onChange={(event) => setToken(event.target.value)} placeholder="ADMIN_TOKEN" />
+        <button onClick={() => void loadAdminData()}>載入管理資料</button>
+      </div>
+
+      <div className="admin-grid">
+        <section className="admin-panel">
+          <h3>生成邀請碼</h3>
+          <div className="admin-form-grid">
+            <label>數量<input type="number" min={1} max={200} value={inviteForm.count} onChange={(event) => setInviteForm({ ...inviteForm, count: Number(event.target.value) })} /></label>
+            <label>方言<select value={inviteForm.dialect_hint} onChange={(event) => setInviteForm({ ...inviteForm, dialect_hint: event.target.value })}>
+              <option value="ruian">瑞安話</option>
+              <option value="wenzhou">溫州市區</option>
+              <option value="">不限</option>
+            </select></label>
+            <label>使用次數<input type="number" min={0} value={inviteForm.max_uses} onChange={(event) => setInviteForm({ ...inviteForm, max_uses: Number(event.target.value) })} /></label>
+            <label>過期時間<input value={inviteForm.expires_at} onChange={(event) => setInviteForm({ ...inviteForm, expires_at: event.target.value })} placeholder="2026-12-31T23:59:59Z" /></label>
+            <label>標籤<input value={inviteForm.label} onChange={(event) => setInviteForm({ ...inviteForm, label: event.target.value })} placeholder="瑞安第一批志願者" /></label>
+            <label>備註<input value={inviteForm.note} onChange={(event) => setInviteForm({ ...inviteForm, note: event.target.value })} /></label>
+          </div>
+          <button className="primary" onClick={() => void createCodes()}>生成邀請碼</button>
+          <div className="admin-table">
+            <div className="admin-row admin-head"><span>邀請碼</span><span>方言</span><span>使用</span><span>備註</span></div>
+            {invitations.slice(0, 12).map((invite) => (
+              <div className="admin-row" key={invite.code}>
+                <span>{invite.code}</span>
+                <span>{dialectLabels[invite.dialect_hint] ?? "不限"}</span>
+                <span>{invite.used_count}/{invite.max_uses || "∞"}</span>
+                <span>{invite.note || invite.label}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="admin-panel">
+          <h3>字典來源</h3>
+          <div className="source-list">
+            {sources.map((source) => (
+              <button key={source.id} className={sourceFilter === source.id ? "selected" : ""} onClick={() => void reloadEntries(statusFilter, source.id)}>
+                <strong>{source.title}</strong>
+                <span>{dialectLabels[source.dialect_scope] ?? source.dialect_scope} · {source.processing_status} · {source.extractable_pages}/{source.page_count} 頁可抽文字</span>
+              </button>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <section className="admin-panel">
+        <div className="admin-toolbar">
+          <h3>字典條目審核</h3>
+          <select value={statusFilter} onChange={(event) => void reloadEntries(event.target.value, sourceFilter)}>
+            <option value="pending">pending</option>
+            <option value="approved">approved</option>
+            <option value="rejected">rejected</option>
+          </select>
+          <button onClick={() => void reloadEntries(statusFilter, "")}>全部來源</button>
+        </div>
+        <div className="entry-list">
+          {entries.map((entry) => (
+            <article className="entry-item" key={entry.id}>
+              <div>
+                <strong>{entry.text}</strong>
+                <span>{entry.source_title} · p.{entry.page} · {entry.entry_type} · {dialectLabels[entry.dialect] ?? entry.dialect}</span>
+                <p>{entry.gloss}</p>
+              </div>
+              <div className="entry-edit">
+                <input value={entry.reading} onChange={(event) => setEntries((current) => current.map((item) => item.id === entry.id ? { ...item, reading: event.target.value } : item))} placeholder="讀音" />
+                <input value={entry.ipa} onChange={(event) => setEntries((current) => current.map((item) => item.id === entry.id ? { ...item, ipa: event.target.value } : item))} placeholder="IPA" />
+                <select value={entry.entry_type} onChange={(event) => setEntries((current) => current.map((item) => item.id === entry.id ? { ...item, entry_type: event.target.value as TaskType } : item))}>
+                  <option value="word">字詞</option>
+                  <option value="sentence">短句</option>
+                </select>
+              </div>
+              <div className="entry-actions">
+                <button onClick={() => void patchEntry(entry, { reading: entry.reading, ipa: entry.ipa, entry_type: entry.entry_type, review_status: "approved" })}>通過</button>
+                <button onClick={() => void patchEntry(entry, { review_status: "rejected" })}>駁回</button>
+                <button disabled={entry.review_status !== "approved"} onClick={() => void addTask(entry)}>{entry.task_id ? "已加入" : "加入任務"}</button>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+      {message && <p className="message">{message}</p>}
+    </section>
+  );
+}
+
 export function App() {
+  const [view, setView] = useState<"collect" | "admin">("collect");
   const [inviteCode, setInviteCode] = useState("DEMO-RUIAN");
   const [verifiedCode, setVerifiedCode] = useState("");
   const [syncState, setSyncState] = useState("尚未連線");
@@ -190,11 +348,23 @@ export function App() {
           </div>
         </div>
         <div className="invite-box">
-          <input value={inviteCode} onChange={(event) => setInviteCode(event.target.value)} aria-label="邀請碼" />
-          <button onClick={() => void verifyAndLoad()}>驗證邀請碼</button>
+          {view === "collect" ? (
+            <>
+              <input value={inviteCode} onChange={(event) => setInviteCode(event.target.value)} aria-label="邀請碼" />
+              <button onClick={() => void verifyAndLoad()}>驗證邀請碼</button>
+            </>
+          ) : (
+            <span className="admin-mode-label">字典與邀請碼管理</span>
+          )}
+        </div>
+        <div className="view-switch">
+          <button className={view === "collect" ? "active" : ""} onClick={() => setView("collect")}>采集</button>
+          <button className={view === "admin" ? "active" : ""} onClick={() => setView("admin")}>管理</button>
         </div>
         <div className="sync"><Circle size={10} fill="currentColor" />{syncState}</div>
       </header>
+
+      {view === "admin" ? <AdminPanel /> : (
 
       <section className="workspace">
         <aside className="sidebar">
@@ -317,6 +487,7 @@ export function App() {
           </div>
         </aside>
       </section>
+      )}
     </main>
   );
 }

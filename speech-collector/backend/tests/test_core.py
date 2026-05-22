@@ -3,7 +3,9 @@ import unittest
 from pathlib import Path
 
 from app.audio import convert_to_training_wav
+from app.dictionary_importer import DictionarySourceSpec, entries_from_page
 from app.db import SCHEMA
+from app.invitations import generate_invitation_code, invitation_is_usable
 from app.manifest import manifest_rows, render_csv, render_jsonl
 from app.task_importer import tasks_from_rime, tasks_from_tsv
 
@@ -86,6 +88,21 @@ name: sample
         result = convert_to_training_wav(self.work / "missing.webm", self.work / "out.wav")
 
         self.assertFalse(result)
+
+    def test_invitation_code_generation_and_usage_limit(self) -> None:
+        code = generate_invitation_code("ruian")
+        self.assertTrue(code.startswith("RA-"))
+        row = {"active": 1, "max_uses": 1, "used_count": 1, "expires_at": ""}
+        self.assertFalse(invitation_is_usable(row))
+
+    def test_dictionary_entries_keep_source_page_and_pending_status(self) -> None:
+        source = DictionarySourceSpec("温州方言读音字典", "", Path("sample.pdf"), "wenzhou")
+        rows = entries_from_page(source, 12, "東 dong 釋義一\n今日天色冷 例句")
+
+        self.assertEqual(rows[0]["source"], "温州方言读音字典")
+        self.assertEqual(rows[0]["page"], 12)
+        self.assertEqual(rows[0]["review_status"], "pending")
+        self.assertEqual(rows[0]["dialect"], "wenzhou")
 
 
 if __name__ == "__main__":

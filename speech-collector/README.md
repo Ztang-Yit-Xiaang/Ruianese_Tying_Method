@@ -12,6 +12,7 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 python scripts\import_tasks.py --limit-per-source 250
+$env:ADMIN_TOKEN="change-this-before-sharing"
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8010
 ```
 
@@ -34,6 +35,47 @@ VITE_API_BASE_URL=https://your-backend.example.org
 ```
 
 未設定時，前端會使用相對路徑 `/api`，本地開發由 Vite proxy 轉到 `http://127.0.0.1:8010`。GitHub Pages 只承載靜態頁，FastAPI/SQLite/音頻上傳後端需另外部署。
+
+## 管理頁與邀請碼
+
+本地啟動後，在頁面右上角切到「管理」，輸入後端啟動時設定的 `ADMIN_TOKEN`。管理頁可以生成邀請碼、查看字典來源、審核抽取條目，並把 approved 條目加入錄音任務。
+
+也可以用 CLI 生成邀請碼：
+
+```powershell
+cd D:\瑞安文化研究\Ruianese\Ruianese_upload\Ruianese_Tying_Method\speech-collector\backend
+python scripts\create_invitations.py --count 20 --dialect ruian --label "瑞安第一批志願者" --max-uses 1
+```
+
+輸出為 TSV，可直接複製給志願者。
+
+## 字典 PDF 導入
+
+先安裝 PDF 依賴：
+
+```powershell
+pip install -r requirements.txt
+```
+
+抽樣導入 6 本本地方言 PDF，所有條目預設為 `pending`，需在管理頁審核：
+
+```powershell
+python scripts\import_dictionary_pdfs.py --limit-per-page 40
+```
+
+如果狀態顯示 `needs_ocr`，代表 PDF 沒有可抽文字層。先把抽樣頁渲染成圖片，放入 OCR queue：
+
+```powershell
+python scripts\prepare_ocr_queue.py --dpi 220
+```
+
+圖片會輸出到 `backend/storage/ocr_queue/`，之後可接 PaddleOCR/Tesseract 或人工校對流程。
+
+確認抽樣效果後再抽全書：
+
+```powershell
+python scripts\import_dictionary_pdfs.py --full --limit-per-page 80
+```
 
 ## 資料來源
 

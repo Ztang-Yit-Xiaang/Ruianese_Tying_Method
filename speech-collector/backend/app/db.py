@@ -14,6 +14,10 @@ CREATE TABLE IF NOT EXISTS invitations (
     label TEXT NOT NULL DEFAULT '',
     dialect_hint TEXT NOT NULL DEFAULT '',
     active INTEGER NOT NULL DEFAULT 1,
+    max_uses INTEGER NOT NULL DEFAULT 0,
+    used_count INTEGER NOT NULL DEFAULT 0,
+    expires_at TEXT NOT NULL DEFAULT '',
+    note TEXT NOT NULL DEFAULT '',
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -65,7 +69,55 @@ CREATE TABLE IF NOT EXISTS submissions (
 );
 
 CREATE INDEX IF NOT EXISTS idx_submissions_review ON submissions(review_status, dialect, task_id);
+
+CREATE TABLE IF NOT EXISTS dictionary_sources (
+    id TEXT PRIMARY KEY,
+    title TEXT NOT NULL,
+    author TEXT NOT NULL DEFAULT '',
+    pdf_path TEXT NOT NULL,
+    dialect_scope TEXT NOT NULL DEFAULT '',
+    processing_status TEXT NOT NULL DEFAULT 'pending',
+    page_count INTEGER NOT NULL DEFAULT 0,
+    extractable_pages INTEGER NOT NULL DEFAULT 0,
+    note TEXT NOT NULL DEFAULT '',
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS dictionary_entries (
+    id TEXT PRIMARY KEY,
+    source_id TEXT NOT NULL,
+    text TEXT NOT NULL,
+    reading TEXT NOT NULL DEFAULT '',
+    ipa TEXT NOT NULL DEFAULT '',
+    gloss TEXT NOT NULL DEFAULT '',
+    source TEXT NOT NULL,
+    page INTEGER NOT NULL DEFAULT 0,
+    entry_type TEXT NOT NULL DEFAULT 'word',
+    dialect TEXT NOT NULL DEFAULT '',
+    review_status TEXT NOT NULL DEFAULT 'pending',
+    review_note TEXT NOT NULL DEFAULT '',
+    task_id TEXT NOT NULL DEFAULT '',
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY(source_id) REFERENCES dictionary_sources(id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_dictionary_entries_review ON dictionary_entries(review_status, source_id, page);
 """
+
+
+def ensure_columns(conn: sqlite3.Connection) -> None:
+    invitation_columns = {row[1] for row in conn.execute("PRAGMA table_info(invitations)").fetchall()}
+    migrations = {
+        "max_uses": "ALTER TABLE invitations ADD COLUMN max_uses INTEGER NOT NULL DEFAULT 0",
+        "used_count": "ALTER TABLE invitations ADD COLUMN used_count INTEGER NOT NULL DEFAULT 0",
+        "expires_at": "ALTER TABLE invitations ADD COLUMN expires_at TEXT NOT NULL DEFAULT ''",
+        "note": "ALTER TABLE invitations ADD COLUMN note TEXT NOT NULL DEFAULT ''",
+    }
+    for column, statement in migrations.items():
+        if column not in invitation_columns:
+            conn.execute(statement)
 
 
 def init_db(path: Path = DATABASE_PATH) -> None:
@@ -73,11 +125,12 @@ def init_db(path: Path = DATABASE_PATH) -> None:
     with sqlite3.connect(path) as conn:
         conn.execute("PRAGMA journal_mode = OFF")
         conn.executescript(SCHEMA)
+        ensure_columns(conn)
         conn.execute(
             """
-            INSERT OR IGNORE INTO invitations(code, label, dialect_hint)
-            VALUES ('DEMO-RUIAN', 'Demo contributor', 'ruian'),
-                   ('DEMO-WENZHOU', 'Demo contributor', 'wenzhou')
+            INSERT OR IGNORE INTO invitations(code, label, dialect_hint, note)
+            VALUES ('DEMO-RUIAN', 'Demo contributor', 'ruian', 'Built-in local demo code'),
+                   ('DEMO-WENZHOU', 'Demo contributor', 'wenzhou', 'Built-in local demo code')
             """
         )
         conn.commit()

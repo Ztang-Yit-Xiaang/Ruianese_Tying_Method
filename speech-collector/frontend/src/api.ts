@@ -24,6 +24,48 @@ export type Submission = {
   raw_audio_path: string;
 };
 
+export type Invitation = {
+  code: string;
+  label: string;
+  dialect_hint: string;
+  active: boolean;
+  max_uses: number;
+  used_count: number;
+  expires_at: string;
+  note: string;
+  created_at?: string;
+};
+
+export type DictionarySource = {
+  id: string;
+  title: string;
+  author: string;
+  pdf_path: string;
+  dialect_scope: string;
+  processing_status: string;
+  page_count: number;
+  extractable_pages: number;
+  note: string;
+  updated_at: string;
+};
+
+export type DictionaryEntry = {
+  id: string;
+  source_id: string;
+  source_title: string;
+  text: string;
+  reading: string;
+  ipa: string;
+  gloss: string;
+  source: string;
+  page: number;
+  entry_type: TaskType;
+  dialect: string;
+  review_status: "pending" | "approved" | "rejected";
+  review_note: string;
+  task_id: string;
+};
+
 export type SpeakerMeta = {
   region: string;
   ageGroup: string;
@@ -93,5 +135,62 @@ export async function submitRecording(args: {
   return request<{ id: string; review_status: string }>("/api/submissions", {
     method: "POST",
     body: form
+  });
+}
+
+function adminHeaders(token: string) {
+  return {
+    "Content-Type": "application/json",
+    "X-Admin-Token": token
+  };
+}
+
+export async function createInvitations(token: string, payload: {
+  count: number;
+  dialect_hint: string;
+  label: string;
+  max_uses: number;
+  expires_at: string;
+  note: string;
+}) {
+  return request<Invitation[]>("/api/admin/invitations", {
+    method: "POST",
+    headers: adminHeaders(token),
+    body: JSON.stringify(payload)
+  });
+}
+
+export async function fetchInvitations(token: string) {
+  return request<Invitation[]>("/api/admin/invitations", {
+    headers: { "X-Admin-Token": token }
+  });
+}
+
+export async function fetchDictionarySources(token: string) {
+  return request<DictionarySource[]>("/api/admin/dictionary-sources", {
+    headers: { "X-Admin-Token": token }
+  });
+}
+
+export async function fetchDictionaryEntries(token: string, reviewStatus = "pending", sourceId = "") {
+  const params = new URLSearchParams({ review_status: reviewStatus, limit: "100" });
+  if (sourceId) params.set("source_id", sourceId);
+  return request<DictionaryEntry[]>(`/api/admin/dictionary-entries?${params.toString()}`, {
+    headers: { "X-Admin-Token": token }
+  });
+}
+
+export async function updateDictionaryEntry(token: string, entryId: string, payload: Partial<DictionaryEntry>) {
+  return request<DictionaryEntry>(`/api/admin/dictionary-entries/${entryId}`, {
+    method: "PATCH",
+    headers: adminHeaders(token),
+    body: JSON.stringify(payload)
+  });
+}
+
+export async function createTaskFromEntry(token: string, entryId: string) {
+  return request<Task>(`/api/admin/tasks/from-entry/${entryId}`, {
+    method: "POST",
+    headers: { "X-Admin-Token": token }
   });
 }

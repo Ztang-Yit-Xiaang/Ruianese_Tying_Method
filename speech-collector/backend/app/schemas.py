@@ -28,6 +28,26 @@ class ReviewUpdate(BaseModel):
     reviewer_notes: str = ""
 
 
+class InvitationCreateRequest(BaseModel):
+    count: int = Field(default=1, ge=1, le=200)
+    dialect_hint: str = ""
+    label: str = ""
+    max_uses: int = Field(default=0, ge=0, le=100000)
+    expires_at: str = ""
+    note: str = ""
+
+
+class DictionaryEntryPatch(BaseModel):
+    text: str | None = None
+    reading: str | None = None
+    ipa: str | None = None
+    gloss: str | None = None
+    entry_type: str | None = Field(default=None, pattern="^(word|sentence)$")
+    dialect: str | None = None
+    review_status: str | None = Field(default=None, pattern="^(pending|approved|rejected)$")
+    review_note: str | None = None
+
+
 class Submission(BaseModel):
     id: str
     invite_code: str

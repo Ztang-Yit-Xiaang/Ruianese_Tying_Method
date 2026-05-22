@@ -3,21 +3,24 @@ import shutil
 import uuid
 from pathlib import Path
 
-from fastapi import FastAPI, File, Form, HTTPException, Query, UploadFile
+from fastapi import Depends, FastAPI, File, Form, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response
 
 from .audio import convert_to_training_wav
-from .config import CONSENT_VERSION, RAW_AUDIO_DIR, WAV_AUDIO_DIR
+from .admin import require_admin
+from .config import CONSENT_VERSION, CORS_ORIGINS, RAW_AUDIO_DIR, WAV_AUDIO_DIR
 from .db import get_conn, init_db, row_to_dict
+from .invitations import generate_invitation_code, invitation_is_usable
 from .manifest import manifest_rows, render_csv, render_jsonl
-from .schemas import InvitationVerifyRequest, ReviewUpdate
+from .schemas import DictionaryEntryPatch, InvitationCreateRequest, InvitationVerifyRequest, ReviewUpdate
+from .task_importer import stable_id
 
 app = FastAPI(title="Wenzhounese/Ruianese ASR Collector")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -39,7 +42,7 @@ def verify_invitation(payload: InvitationVerifyRequest) -> dict:
     code = payload.code.strip().upper()
     with get_conn() as conn:
         row = conn.execute("SELECT * FROM invitations WHERE code = ?", (code,)).fetchone()
-        if not row or not row["active"]:
+        if not invitation_is_usable(row):
             raise HTTPException(status_code=404, detail="邀請碼不存在或已停用")
         return {
             "code": row["code"],
@@ -58,8 +61,8 @@ def list_tasks(
     limit: int = Query(50, ge=1, le=200),
 ) -> list[dict]:
     with get_conn() as conn:
-        invite = conn.execute("SELECT code FROM invitations WHERE code = ? AND active = 1", (invite_code.upper(),)).fetchone()
-        if not invite:
+        invite = conn.execute("SELECT * FROM invitations WHERE code = ?", (invite_code.upper(),)).fetchone()
+        if not invitation_is_usable(invite):
             raise HTTPException(status_code=403, detail="邀請碼無效")
 
         where = ["status = ?"]
@@ -106,9 +109,9 @@ def create_submission(
     speaker_id = uuid.uuid5(uuid.NAMESPACE_URL, speaker_seed).hex[:16]
 
     with get_conn() as conn:
-        invite = conn.execute("SELECT code FROM invitations WHERE code = ? AND active = 1", (invite_code,)).fetchone()
+        invite = conn.execute("SELECT * FROM invitations WHERE code = ?", (invite_code,)).fetchone()
         task = conn.execute("SELECT * FROM tasks WHERE id = ?", (task_id,)).fetchone()
-        if not invite:
+        if not invitation_is_usable(invite):
             raise HTTPException(status_code=403, detail="邀請碼無效")
         if not task:
             raise HTTPException(status_code=404, detail="任務不存在")
@@ -153,6 +156,7 @@ def create_submission(
                 review_status,
             ),
         )
+        conn.execute("UPDATE invitations SET used_count = used_count + 1 WHERE code = ?", (invite_code,))
 
     return {
         "id": submission_id,
@@ -213,3 +217,139 @@ def export_manifest(format: str = "jsonl", include_review: bool = False) -> Resp
     if format == "jsonl":
         return Response(render_jsonl(rows), media_type="application/x-ndjson; charset=utf-8")
     raise HTTPException(status_code=400, detail="format 必須是 jsonl 或 csv")
+
+
+@app.post("/api/admin/invitations", dependencies=[Depends(require_admin)])
+def create_invitations(payload: InvitationCreateRequest) -> list[dict]:
+    created: list[dict] = []
+    with get_conn() as conn:
+        for _ in range(payload.count):
+            code = generate_invitation_code(payload.dialect_hint)
+            while conn.execute("SELECT code FROM invitations WHERE code = ?", (code,)).fetchone():
+                code = generate_invitation_code(payload.dialect_hint)
+            conn.execute(
+                """
+                INSERT INTO invitations(code, label, dialect_hint, max_uses, expires_at, note)
+                VALUES (?, ?, ?, ?, ?, ?)
+                """,
+                (code, payload.label, payload.dialect_hint, payload.max_uses, payload.expires_at, payload.note),
+            )
+            created.append(
+                {
+                    "code": code,
+                    "label": payload.label,
+                    "dialect_hint": payload.dialect_hint,
+                    "max_uses": payload.max_uses,
+                    "used_count": 0,
+                    "expires_at": payload.expires_at,
+                    "note": payload.note,
+                    "active": True,
+                }
+            )
+    return created
+
+
+@app.get("/api/admin/invitations", dependencies=[Depends(require_admin)])
+def list_invitations(limit: int = Query(200, ge=1, le=1000)) -> list[dict]:
+    with get_conn() as conn:
+        rows = conn.execute(
+            """
+            SELECT code, label, dialect_hint, active, max_uses, used_count, expires_at, note, created_at
+            FROM invitations
+            ORDER BY created_at DESC, code ASC
+            LIMIT ?
+            """,
+            (limit,),
+        ).fetchall()
+        return [dict(row) for row in rows]
+
+
+@app.get("/api/admin/dictionary-sources", dependencies=[Depends(require_admin)])
+def list_dictionary_sources() -> list[dict]:
+    with get_conn() as conn:
+        rows = conn.execute(
+            """
+            SELECT id, title, author, pdf_path, dialect_scope, processing_status,
+                   page_count, extractable_pages, note, updated_at
+            FROM dictionary_sources
+            ORDER BY title ASC
+            """
+        ).fetchall()
+        return [dict(row) for row in rows]
+
+
+@app.get("/api/admin/dictionary-entries", dependencies=[Depends(require_admin)])
+def list_dictionary_entries(
+    review_status: str = "pending",
+    source_id: str | None = None,
+    limit: int = Query(100, ge=1, le=500),
+) -> list[dict]:
+    where = ["e.review_status = ?"]
+    params: list[object] = [review_status]
+    if source_id:
+        where.append("e.source_id = ?")
+        params.append(source_id)
+    params.append(limit)
+    with get_conn() as conn:
+        rows = conn.execute(
+            f"""
+            SELECT e.*, s.title AS source_title
+            FROM dictionary_entries e
+            JOIN dictionary_sources s ON s.id = e.source_id
+            WHERE {' AND '.join(where)}
+            ORDER BY e.updated_at DESC, e.page ASC
+            LIMIT ?
+            """,
+            params,
+        ).fetchall()
+        return [dict(row) for row in rows]
+
+
+@app.patch("/api/admin/dictionary-entries/{entry_id}", dependencies=[Depends(require_admin)])
+def update_dictionary_entry(entry_id: str, payload: DictionaryEntryPatch) -> dict:
+    allowed = ["text", "reading", "ipa", "gloss", "entry_type", "dialect", "review_status", "review_note"]
+    values = payload.model_dump(exclude_unset=True)
+    updates = [field for field in allowed if field in values]
+    if not updates:
+        raise HTTPException(status_code=400, detail="沒有可更新欄位")
+    with get_conn() as conn:
+        row = conn.execute("SELECT * FROM dictionary_entries WHERE id = ?", (entry_id,)).fetchone()
+        if not row:
+            raise HTTPException(status_code=404, detail="字典條目不存在")
+        assignments = ", ".join(f"{field} = ?" for field in updates)
+        params = [values[field] or "" for field in updates] + [entry_id]
+        conn.execute(
+            f"UPDATE dictionary_entries SET {assignments}, updated_at = CURRENT_TIMESTAMP WHERE id = ?",
+            params,
+        )
+        updated = conn.execute("SELECT * FROM dictionary_entries WHERE id = ?", (entry_id,)).fetchone()
+        return row_to_dict(updated)
+
+
+@app.post("/api/admin/tasks/from-entry/{entry_id}", dependencies=[Depends(require_admin)])
+def create_task_from_dictionary_entry(entry_id: str) -> dict:
+    with get_conn() as conn:
+        entry = conn.execute("SELECT * FROM dictionary_entries WHERE id = ?", (entry_id,)).fetchone()
+        if not entry:
+            raise HTTPException(status_code=404, detail="字典條目不存在")
+        if entry["review_status"] != "approved":
+            raise HTTPException(status_code=400, detail="只有 approved 條目可加入任務")
+        romanization = entry["reading"] or entry["ipa"]
+        task_id = stable_id(entry["dialect"], entry["entry_type"], entry["source"], entry["text"], romanization)
+        conn.execute(
+            """
+            INSERT OR IGNORE INTO tasks(id, dialect, type, text, romanization, source, priority, status)
+            VALUES (?, ?, ?, ?, ?, ?, ?, 'ready')
+            """,
+            (task_id, entry["dialect"] or "wenzhou", entry["entry_type"], entry["text"], romanization, entry["source"], 500),
+        )
+        conn.execute(
+            """
+            UPDATE dictionary_entries
+            SET task_id = ?, updated_at = CURRENT_TIMESTAMP
+            WHERE id = ?
+            """,
+            (task_id, entry_id),
+        )
+        task = conn.execute("SELECT * FROM tasks WHERE id = ?", (task_id,)).fetchone()
+        return row_to_dict(task)
