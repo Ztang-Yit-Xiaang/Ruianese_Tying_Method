@@ -42,7 +42,8 @@ def write_dict(syllables, path):
     header = f"""# Rime dictionary
 # Rui'an dialect romanization syllables
 # Generated from ruian_legal_pairs.tsv.
-# Official vowel policy: IPA o -> o, IPA ɔ -> oe, IPA uɔ -> uoe, IPA yɔ -> yoe.
+# Official policy: IPA o -> o, IPA ɔ -> oe, IPA ɛ -> eh, IPA əʉ -> ou,
+# IPA uɔ -> uoe, IPA yɔ -> yoe; ts -> z, IPA z -> ss, ʑ/z̠ -> zs.
 # Tones: 1-8 suffixes; checked-tone codas -p/-t/-k are not required in ordinary input.
 # Generated: {date.today().isoformat()}
 ---

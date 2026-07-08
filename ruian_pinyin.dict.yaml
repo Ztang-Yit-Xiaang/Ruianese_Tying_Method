@@ -1,12 +1,13 @@
 # Rime dictionary
 # Rui'an dialect romanization syllables
 # Generated from ruian_legal_pairs.tsv.
-# Official vowel policy: IPA o -> o, IPA ɔ -> oe, IPA uɔ -> uoe, IPA yɔ -> yoe.
+# Official policy: IPA o -> o, IPA ɔ -> oe, IPA ɛ -> eh, IPA əʉ -> ou,
+# IPA uɔ -> uoe, IPA yɔ -> yoe; ts -> z, IPA z -> ss, ʑ/z̠ -> zs.
 # Tones: 1-8 suffixes; checked-tone codas -p/-t/-k are not required in ordinary input.
-# Generated: 2026-05-17
+# Generated: 2026-06-17
 ---
 name: ruian_pinyin
-version: "2026-05-17"
+version: "2026-06-17"
 sort: by_weight
 use_preset_vocabulary: false
 columns:
@@ -5116,6 +5117,24 @@ zsie5	1
 zsie6	1
 zsie7	1
 zsie8	1
+zsyue	1
+zsyue1	1
+zsyue2	1
+zsyue3	1
+zsyue4	1
+zsyue5	1
+zsyue6	1
+zsyue7	1
+zsyue8	1
+zsiang	1
+zsiang1	1
+zsiang2	1
+zsiang3	1
+zsiang4	1
+zsiang5	1
+zsiang6	1
+zsiang7	1
+zsiang8	1
 zsang	1
 zsang1	1
 zsang2	1
@@ -5143,3 +5162,48 @@ zsong5	1
 zsong6	1
 zsong7	1
 zsong8	1
+vyu	1
+vyu1	1
+vyu2	1
+vyu3	1
+vyu4	1
+vyu5	1
+vyu6	1
+vyu7	1
+vyu8	1
+kyue	1
+kyue1	1
+kyue2	1
+kyue3	1
+kyue4	1
+kyue5	1
+kyue6	1
+kyue7	1
+kyue8	1
+deh	1
+deh1	1
+deh2	1
+deh3	1
+deh4	1
+deh5	1
+deh6	1
+deh7	1
+deh8	1
+teh	1
+teh1	1
+teh2	1
+teh3	1
+teh4	1
+teh5	1
+teh6	1
+teh7	1
+teh8	1
+ssei	1
+ssei1	1
+ssei2	1
+ssei3	1
+ssei4	1
+ssei5	1
+ssei6	1
+ssei7	1
+ssei8	1

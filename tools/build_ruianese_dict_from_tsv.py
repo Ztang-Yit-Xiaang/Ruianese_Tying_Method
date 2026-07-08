@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-import sys, csv, io, re
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+import re
+import sys
 
 def load_tsv(tsv_path):
     items = []
