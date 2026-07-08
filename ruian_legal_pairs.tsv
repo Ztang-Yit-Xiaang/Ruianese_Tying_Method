@@ -1,6 +1,7 @@
 # Legal initial-final pairs for the Rui'an pinyin syllable dictionary.
 # Source basis: Jie Yong Ki / 張永愷, Rui'an dialect reading dictionary tables, pp. 437-439.
-# Codes follow ruian_pinyin_scheme.docx: o=o, oe=IPA ɔ, uoe=IPA uɔ, yoe=IPA yɔ.
+# Codes follow the current reviewed scheme: o=IPA o, oe=IPA ɔ, eh=IPA ɛ,
+# ou=IPA əʉ, uoe=IPA uɔ, yoe=IPA yɔ; IPA z is written ss, while ts stays z and ʑ/z̠ stays zs.
 # Columns: initial<TAB>final<TAB>source
 # Empty initial is written as Ø.
 Ø	a	p437-p439
@@ -570,6 +571,13 @@ zs	ia	p437-p439
 zs	iao	p437-p439
 zs	iou	p437-p439
 zs	ie	p437-p439
+zs	yue	human_review_pilot_080_099
+zs	iang	human_review_batch_100_139
 zs	ang	p437-p439
 zs	eng	p437-p439
 zs	ong	p437-p439
+v	yu	human_review_batch_100_139
+k	yue	human_review_batch_100_139
+d	eh	human_review_batch_100_139
+t	eh	human_review_batch_100_139
+ss	ei	human_review_batch_100_139

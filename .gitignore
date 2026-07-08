@@ -21,3 +21,10 @@ zhang_transcription.py
 /generate_ruian_pinyin_dict.py
 /jie_yong_ki_transcription.py
 /Py_OCR/
+API_KEY.txt
+API_BASE_URL.txt
+.codex/
+.codex_tmp*/
+output/ipa_closed_set*/
+output/pytest_tmp/
+output/.pytest_cache_tmp/

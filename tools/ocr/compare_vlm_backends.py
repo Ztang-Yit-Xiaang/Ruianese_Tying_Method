@@ -8,7 +8,6 @@ import csv
 import json
 import os
 import re
-import sys
 import time
 import traceback
 from pathlib import Path
@@ -41,6 +40,16 @@ COLUMNS = [
 TONE_BASES = {"平", "上", "去", "入", ""}
 TONE_REGISTERS = {"yin", "yang", "unknown", ""}
 TONE_NUMBERS = {str(index) for index in range(1, 9)} | {""}
+TONE_NUMBER_MAP = {
+    ("平", "yin"): "1",
+    ("上", "yin"): "2",
+    ("去", "yin"): "3",
+    ("入", "yin"): "4",
+    ("平", "yang"): "5",
+    ("上", "yang"): "6",
+    ("去", "yang"): "7",
+    ("入", "yang"): "8",
+}
 QWEN_PROMPT = """Read this scanned Rui'an dialect dictionary table page.
 
 Return ONLY valid JSON in this shape:
@@ -147,10 +156,13 @@ def status_for_row(row: dict[str, str]) -> tuple[str, str]:
         notes.append("invalid_tone_number")
     if tone_number and (not tone_base or tone_register in {"", "unknown"}):
         notes.append("tone_number_without_full_tone")
+    expected = TONE_NUMBER_MAP.get((tone_base, tone_register))
+    if tone_number and expected and tone_number != expected:
+        notes.append(f"tone_number_mismatch_expected_{expected}")
     review_note = row.get("review_note", "")
     if review_note:
         notes.append(review_note)
-    return ("review" if notes else "ok"), ",".join(dict.fromkeys(notes))
+    return ("review" if notes else "ok"), ",".join(dict.fromkeys(note for note in notes if note))
 
 
 def normalize_row(page: int, index: int, raw: dict[str, Any]) -> dict[str, str]:
@@ -169,7 +181,7 @@ def normalize_row(page: int, index: int, raw: dict[str, Any]) -> dict[str, str]:
         row["tone_register"] = "unknown"
     row["status"], validation_note = status_for_row(row)
     if validation_note:
-        row["review_note"] = ",".join(filter(None, [row["review_note"], validation_note]))
+        row["review_note"] = ",".join(dict.fromkeys(filter(None, [row["review_note"], validation_note])))
     return row
 
 
@@ -309,6 +321,15 @@ def load_cached_paddle_rows(page: int, args: argparse.Namespace) -> list[dict[st
     return extract_json_rows(page, raw_text) or html_table_rows_to_tsv_rows(page, raw_text) or markdown_rows_to_tsv_rows(page, raw_text)
 
 
+def load_cached_qwen_rows(page: int, args: argparse.Namespace) -> list[dict[str, str]]:
+    raw_json_path = args.out_dir / f"page_{page:03d}_qwen_vl_raw.json"
+    if args.rerun_qwen or not raw_json_path.exists():
+        return []
+    data = json.loads(raw_json_path.read_text(encoding="utf-8"))
+    output = data.get("output", "") if isinstance(data, dict) else ""
+    return extract_json_rows(page, output)
+
+
 def run_paddleocr_vl(page: int, image_path: Path, args: argparse.Namespace) -> tuple[list[dict[str, str]], dict[str, str]]:
     started = time.time()
     cached_rows = load_cached_paddle_rows(page, args)
@@ -368,6 +389,9 @@ def qwen_messages() -> list[dict[str, Any]]:
 def run_qwen_vl(page: int, image_path: Path, args: argparse.Namespace) -> tuple[list[dict[str, str]], dict[str, str]]:
     started = time.time()
     raw_json_path = args.out_dir / f"page_{page:03d}_qwen_vl_raw.json"
+    cached_rows = load_cached_qwen_rows(page, args)
+    if cached_rows:
+        return cached_rows, {"status": "ok", "runtime": "0.00", "note": "parsed_cached_raw_output"}
     try:
         import torch
         from transformers import AutoProcessor
@@ -417,6 +441,7 @@ def row_metrics(rows: list[dict[str, str]]) -> dict[str, int]:
             if row.get("tone_base") not in TONE_BASES
             or row.get("tone_register") not in TONE_REGISTERS
             or row.get("tone_number") not in TONE_NUMBERS
+            or "tone_number_mismatch" in row.get("review_note", "")
         ),
     }
 
@@ -456,6 +481,7 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("--qwen-max-image-edge", type=int, default=1600)
     parser.add_argument("--max-new-tokens", type=int, default=4096)
     parser.add_argument("--rerun-paddle-vl", action="store_true")
+    parser.add_argument("--rerun-qwen", action="store_true")
     args = parser.parse_args(argv)
 
     args.out_dir.mkdir(parents=True, exist_ok=True)

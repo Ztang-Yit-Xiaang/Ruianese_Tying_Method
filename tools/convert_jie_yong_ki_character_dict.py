@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from tools.lib.jie_yong_ki_transcription import convert_code
+from tools.lib.jie_yong_ki_transcription import convert_code  # noqa: E402
 DEFAULT_SOURCE = ROOT / "ruianese.character_01.dict.yaml"
 DEFAULT_SYLLABLES = ROOT / "ruian_pinyin.dict.yaml"
 DEFAULT_OUT_DIR = ROOT / "output" / "jie_yong_ki"

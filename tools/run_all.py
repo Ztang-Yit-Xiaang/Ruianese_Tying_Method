@@ -230,6 +230,40 @@ def validate_dicts():
     print(f"Validated: {len(valid)} pinyin syllables, {len(converted_rows)} converted rows, {len(jie_entries)} formal entries")
 
 
+def run_vlm_clean_rows(args):
+    vlm_dir = args.out_dir / "vlm_backend_trials"
+    raw = vlm_dir / f"page_{args.vlm_clean_page:03d}_paddleocr_vl_raw.json"
+    if not raw.exists():
+        print(f"Skip VLM clean rows: missing {raw}")
+        return
+    run_python(
+        ROOT / "tools" / "ocr" / "build_clean_vlm_rows.py",
+        "--page",
+        f"{args.vlm_clean_page:03d}",
+        "--image-dir",
+        args.image_dir,
+        "--out-dir",
+        vlm_dir,
+        "--start-after",
+        args.start_after,
+    )
+
+
+def run_ipa_review(args):
+    vlm_dir = args.out_dir / "vlm_backend_trials"
+    clean_rows = vlm_dir / f"page_{args.vlm_clean_page:03d}_clean_rows.tsv"
+    if not clean_rows.exists():
+        print(f"Skip IPA review: missing {clean_rows}")
+        return
+    run_python(
+        ROOT / "tools" / "ocr" / "review_ipa_with_llm.py",
+        "--clean-rows",
+        clean_rows,
+        "--out-dir",
+        vlm_dir,
+    )
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--image-dir", type=Path, default=DEFAULT_IMAGE_DIR)
@@ -240,6 +274,9 @@ def main(argv=None):
     parser.add_argument("--rerun-existing", dest="skip_existing", action="store_false")
     parser.add_argument("--skip-book-ocr", action="store_true")
     parser.add_argument("--skip-structured-book-ocr", action="store_true")
+    parser.add_argument("--skip-vlm-clean-rows", action="store_true")
+    parser.add_argument("--skip-ipa-review", action="store_true")
+    parser.add_argument("--vlm-clean-page", type=int, default=59)
     parser.add_argument(
         "--structured-limit",
         type=int,
@@ -277,6 +314,10 @@ def main(argv=None):
         if not args.skip_existing:
             structured_args.append("--rerun-existing")
         run_python(ROOT / "tools" / "ocr" / "ocr_jie_yong_ki_book_table.py", *structured_args)
+    if not args.skip_vlm_clean_rows:
+        run_vlm_clean_rows(args)
+    if not args.skip_ipa_review:
+        run_ipa_review(args)
 
 
 if __name__ == "__main__":
